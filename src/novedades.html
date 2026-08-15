@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Permite que el sitio se adapte a diferentes tamaños de pantalla -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Conoce los productos más recientes disponibles en Beauty Store.">
+
+    <title>Beauty Store | Novedades</title>
+
+    <!-- Archivo principal de JavaScript, Bootstrap y estilos -->
+    <script type="module" src="./js/main.js"></script>
+</head>
+
+<body>
+
+    <!-- ========================================
+         HEADER Y NAVEGACIÓN
+    ========================================= -->
+
+    <header>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+            <div class="container">
+
+                <a class="navbar-brand fw-bold"
+                    href="index.html">
+                    Beauty Store
+                </a>
+
+                <!-- Botón para menú responsive -->
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#menuPrincipal"
+                    aria-controls="menuPrincipal"
+                    aria-expanded="false"
+                    aria-label="Abrir menú">
+
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+
+                <div
+                    class="collapse navbar-collapse"
+                    id="menuPrincipal">
+
+                    <ul class="navbar-nav ms-auto">
+
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="index.html">
+                                Inicio
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="productos.html">
+                                Productos
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="categorias.html">
+                                Categorías
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="ofertas.html">
+                                Ofertas
+                            </a>
+                        </li>
+
+<li class="nav-item">
+    <a class="nav-link"
+        href="favoritos.html">
+        Favoritos
+    </a>
+</li>
+
+<li class="nav-item">
+                            <a class="nav-link active"
+                                href="carrito.html">
+                                Carrito
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="nosotros.html">
+                                Nosotros
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="contacto.html">
+                                Contacto
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ========================================
+         CONTENIDO PRINCIPAL
+    ========================================= -->
+
+    <main>
+
+        <!-- ====================================
+             ENCABEZADO
+        ===================================== -->
+
+        <section class="bg-light py-5 text-center">
+
+            <div class="container">
+
+                <h1 class="fw-bold">
+                    Novedades
+                </h1>
+
+                <p class="lead mb-0">
+                    Descubre algunos de los productos
+                    más recientes de Beauty Store.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ====================================
+             PRODUCTOS NUEVOS
+        ===================================== -->
+
+        <section class="container py-5">
+
+            <div class="row g-4">
+
+
+                <!-- Novedad 1 -->
+
+                <article class="col-12 col-md-6 col-lg-4">
+
+                    <div class="card h-100 product-card">
+
+                        <img
+                            src="./images/producto-3.jpg"
+                            class="card-img-top product-image"
+                            alt="Sérum Facial">
+
+                        <div class="card-body text-center">
+
+                            <span class="badge bg-success mb-2">
+                                Nuevo
+                            </span>
+
+                            <h2 class="card-title h5">
+                                Sérum Facial
+                            </h2>
+
+                            <p class="card-text">
+                                Fórmula hidratante para complementar
+                                tu rutina diaria de cuidado facial.
+                            </p>
+
+                            <p class="fw-bold">
+                                $25.00
+                            </p>
+
+                            <button
+                                class="btn btn-dark btn-detalles"
+                                data-nombre="Sérum Facial"
+                                data-precio="$25.00"
+                                data-descripcion="Sérum facial hidratante recientemente añadido a nuestra colección."
+                                data-imagen="./images/producto-3.jpg">
+
+                                Ver detalles
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Novedad 2 -->
+
+                <article class="col-12 col-md-6 col-lg-4">
+
+                    <div class="card h-100 product-card">
+
+                        <img
+                            src="./images/producto-5.jpg"
+                            class="card-img-top product-image"
+                            alt="Crema Facial">
+
+                        <div class="card-body text-center">
+
+                            <span class="badge bg-success mb-2">
+                                Nuevo
+                            </span>
+
+                            <h2 class="card-title h5">
+                                Crema Facial
+                            </h2>
+
+                            <p class="card-text">
+                                Crema hidratante diseñada para
+                                complementar tu rutina de belleza.
+                            </p>
+
+                            <p class="fw-bold">
+                                $28.00
+                            </p>
+
+                            <button
+                                class="btn btn-dark btn-detalles"
+                                data-nombre="Crema Facial"
+                                data-precio="$28.00"
+                                data-descripcion="Crema facial hidratante recientemente incorporada a Beauty Store."
+                                data-imagen="./images/producto-5.jpg">
+
+                                Ver detalles
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Novedad 3 -->
+
+                <article class="col-12 col-md-6 col-lg-4">
+
+                    <div class="card h-100 product-card">
+
+                        <img
+                            src="./images/producto-6.jpg"
+                            class="card-img-top product-image"
+                            alt="Paleta de Sombras">
+
+                        <div class="card-body text-center">
+
+                            <span class="badge bg-success mb-2">
+                                Nuevo
+                            </span>
+
+                            <h2 class="card-title h5">
+                                Paleta de Sombras
+                            </h2>
+
+                            <p class="card-text">
+                                Una combinación de tonos versátiles
+                                para diferentes estilos de maquillaje.
+                            </p>
+
+                            <p class="fw-bold">
+                                $32.00
+                            </p>
+
+                            <button
+                                class="btn btn-dark btn-detalles"
+                                data-nombre="Paleta de Sombras"
+                                data-precio="$32.00"
+                                data-descripcion="Nueva paleta con tonos versátiles para crear diferentes estilos."
+                                data-imagen="./images/producto-6.jpg">
+
+                                Ver detalles
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ====================================
+             INFORMACIÓN ADICIONAL
+        ===================================== -->
+
+        <aside class="bg-light py-5">
+
+            <div class="container text-center">
+
+                <h2 class="h3">
+                    Siempre hay algo nuevo
+                </h2>
+
+                <p>
+                    Visita nuestro catálogo para descubrir
+                    todos los productos disponibles.
+                </p>
+
+                <a
+                    href="productos.html"
+                    class="btn btn-outline-dark">
+
+                    Ver catálogo completo
+
+                </a>
+
+            </div>
+
+        </aside>
+
+    </main>
+
+
+    <!-- ========================================
+         MODAL DE DETALLES DEL PRODUCTO
+    ========================================= -->
+
+    <div
+        class="modal fade"
+        id="modalProducto"
+        tabindex="-1"
+        aria-labelledby="modalProductoTitulo"
+        aria-hidden="true">
+
+        <div class="modal-dialog modal-dialog-centered">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+
+                    <h2
+                        class="modal-title fs-5"
+                        id="modalProductoTitulo">
+                        Detalles del producto
+                    </h2>
+
+                    <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Cerrar">
+                    </button>
+
+                </div>
+
+
+                <div class="modal-body text-center">
+
+                    <img
+                        id="modalProductoImagen"
+                        src=""
+                        class="img-fluid rounded mb-3 modal-product-image"
+                        alt="Producto seleccionado">
+
+                    <h3
+                        id="modalProductoNombre"
+                        class="h4">
+                    </h3>
+
+                    <p id="modalProductoDescripcion">
+                    </p>
+
+                    <p
+                        id="modalProductoPrecio"
+                        class="fw-bold fs-5">
+                    </p>
+
+                </div>
+
+
+                <div class="modal-footer">
+
+                    <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal">
+                        Cerrar
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+   <!-- ========================================
+     FOOTER
+========================================= -->
+
+<footer class="bg-dark text-white text-center py-4">
+
+    <div class="container">
+
+        <p class="mb-1">
+            &copy; 2026 Beauty Store. Todos los derechos reservados.
+        </p>
+
+        <p class="mb-2">
+            Belleza, cuidado y estilo en un solo lugar.
+        </p>
+
+        <p class="mb-2">
+
+            <a
+                href="preguntas.html"
+                class="text-white text-decoration-none">
+                Preguntas frecuentes
+            </a>
+
+            <span class="mx-2">|</span>
+
+            <a
+                href="politicas.html"
+                class="text-white text-decoration-none">
+                Políticas
+            </a>
+
+        </p>
+
+        <p class="mb-0">
+            Proyecto académico desarrollado con
+            HTML5, CSS, Bootstrap, JavaScript y Vite.
+        </p>
+
+    </div>
+
+</footer>

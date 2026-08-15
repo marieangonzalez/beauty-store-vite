@@ -1,0 +1,120 @@
+/* ==========================================
+   BOOTSTRAP
+========================================== */
+
+@import "bootstrap/scss/bootstrap";
+
+
+/* ==========================================
+   ESTILOS GENERALES
+========================================== */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    color: #212529;
+}
+
+
+/* ==========================================
+   NAVEGACIÓN
+========================================== */
+
+.navbar-brand {
+    letter-spacing: 1px;
+}
+
+
+/* ==========================================
+   CARRUSEL PRINCIPAL
+========================================== */
+
+.hero-slide {
+    min-height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-1 {
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.45),
+            rgba(0, 0, 0, 0.45)
+        ),
+        url("../images/banner-1.jpg");
+}
+
+.hero-2 {
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.45),
+            rgba(0, 0, 0, 0.45)
+        ),
+        url("../images/banner-2.jpg");
+}
+
+.hero-3 {
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.45),
+            rgba(0, 0, 0, 0.45)
+        ),
+        url("../images/banner-3.jpg");
+}
+
+
+/* ==========================================
+   PÁGINA DE INICIO
+========================================== */
+
+.descripcion-inicio {
+    max-width: 750px;
+}
+
+
+/* ==========================================
+   PRODUCTOS
+========================================== */
+
+.product-image {
+    height: 300px;
+    object-fit: cover;
+}
+.product-card {
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+/* Efecto visual al pasar el mouse */
+
+.product-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* ==========================================
+   MODAL DE PRODUCTOS
+========================================== */
+
+.modal-product-image {
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 768px) {
+
+    .hero-slide {
+        min-height: 400px;
+    }
+
+}

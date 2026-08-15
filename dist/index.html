@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!--
+    La etiqueta viewport permite que la página se adapte
+    correctamente a celulares, tabletas y computadoras.
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Beauty Store - Tienda online de productos de belleza, maquillaje y cuidado personal.">
+
+    <title>Beauty Store | Inicio</title>
+
+    <!--
+    El archivo main.js importa Bootstrap y nuestros
+    estilos personalizados.
+    -->
+  <script type="module" crossorigin src="/beauty-store-vite/assets/inicio-B3v79zoy.js"></script>
+  <link rel="modulepreload" crossorigin href="/beauty-store-vite/assets/main-H7jxkXGY.js">
+  <link rel="stylesheet" crossorigin href="/beauty-store-vite/assets/main-DX67eQ_V.css">
+</head>
+
+<body>
+
+    <!-- ========================================
+         HEADER Y NAVEGACIÓN
+    ========================================= -->
+
+    <header>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+
+                <a class="navbar-brand fw-bold" href="index.html">
+                    Beauty Store
+                </a>
+
+                <!-- Botón para menú responsive -->
+                <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#menuPrincipal"
+                    aria-controls="menuPrincipal"
+                    aria-expanded="false"
+                    aria-label="Abrir menú de navegación">
+
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+
+                    <ul class="navbar-nav ms-auto">
+
+                        <li class="nav-item">
+                            <a class="nav-link active"
+                                href="index.html">
+                                Inicio
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="productos.html">
+                                Productos
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="categorias.html">
+                                Categorías
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="ofertas.html">
+                                Ofertas
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+    <a class="nav-link"
+        href="favoritos.html">
+        Favoritos
+    </a>
+</li>
+
+<li class="nav-item">
+                            <a class="nav-link"
+                                href="carrito.html">
+                                Carrito
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="nosotros.html">
+                                Nosotros
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="contacto.html">
+                                Contacto
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+        </nav>
+
+    </header>
+
+
+    <!-- ========================================
+         CONTENIDO PRINCIPAL
+    ========================================= -->
+
+    <main>
+
+        <!-- ====================================
+             CARRUSEL
+        ===================================== -->
+
+        <section aria-label="Productos destacados">
+
+            <div id="carouselPrincipal"
+                class="carousel slide"
+                data-bs-ride="carousel">
+
+                <!-- Indicadores -->
+
+                <div class="carousel-indicators">
+
+                    <button type="button"
+                        data-bs-target="#carouselPrincipal"
+                        data-bs-slide-to="0"
+                        class="active"
+                        aria-current="true"
+                        aria-label="Imagen 1">
+                    </button>
+
+                    <button type="button"
+                        data-bs-target="#carouselPrincipal"
+                        data-bs-slide-to="1"
+                        aria-label="Imagen 2">
+                    </button>
+
+                    <button type="button"
+                        data-bs-target="#carouselPrincipal"
+                        data-bs-slide-to="2"
+                        aria-label="Imagen 3">
+                    </button>
+
+                </div>
+
+
+                <div class="carousel-inner">
+
+                    <!-- Slide 1 -->
+
+                    <div class="carousel-item active">
+
+    <div class="hero-slide hero-1 d-flex align-items-center">
+
+                            <div class="container text-center text-white">
+
+                                <h1 class="display-4 fw-bold">
+                                    Descubre tu belleza
+                                </h1>
+
+                                <p class="lead">
+                                    Productos seleccionados para cuidar
+                                    y realzar tu estilo.
+                                </p>
+
+                                <a href="productos.html"
+                                    class="btn btn-light btn-lg">
+
+                                    Ver productos
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Slide 2 -->
+
+                    <!-- Slide 2 -->
+
+<div class="carousel-item">
+
+    <div class="hero-slide hero-2 d-flex align-items-center">
+
+        <div class="container text-center text-white">
+
+            <h2 class="display-4 fw-bold">
+                Nuevas tendencias
+            </h2>
+
+            <p class="lead">
+                Conoce nuestras novedades
+                y productos favoritos.
+            </p>
+
+            <a href="novedades.html"
+                class="btn btn-light btn-lg">
+
+                Ver novedades
+
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+                    <!-- Slide 3 -->
+
+                    <div class="carousel-item">
+
+                        <div class="hero-slide hero-3 d-flex align-items-center">
+
+                            <div class="container text-center text-white">
+
+                                <h2 class="display-4 fw-bold">
+                                    Ofertas especiales
+                                </h2>
+
+                                <p class="lead">
+                                    Encuentra productos seleccionados
+                                    a precios especiales.
+                                </p>
+
+                                <a href="ofertas.html"
+                                    class="btn btn-light btn-lg">
+
+                                    Ver ofertas
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Flecha anterior -->
+
+                <button class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselPrincipal"
+                    data-bs-slide="prev">
+
+                    <span class="carousel-control-prev-icon"
+                        aria-hidden="true">
+                    </span>
+
+                    <span class="visually-hidden">
+                        Anterior
+                    </span>
+
+                </button>
+
+
+                <!-- Flecha siguiente -->
+
+                <button class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselPrincipal"
+                    data-bs-slide="next">
+
+                    <span class="carousel-control-next-icon"
+                        aria-hidden="true">
+                    </span>
+
+                    <span class="visually-hidden">
+                        Siguiente
+                    </span>
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- ====================================
+             BIENVENIDA
+        ===================================== -->
+
+        <section class="container py-5 text-center">
+
+            <h2 class="mb-3">
+                Bienvenidos a Beauty Store
+            </h2>
+
+            <p class="lead mx-auto descripcion-inicio">
+
+                Beauty Store es una tienda online dedicada
+                a ofrecer productos de belleza, maquillaje
+                y cuidado personal para diferentes estilos
+                y necesidades.
+
+            </p>
+
+        </section>
+
+
+        <!-- ====================================
+             PRODUCTOS DESTACADOS
+        ===================================== -->
+
+        <section class="container pb-5">
+
+            <h2 class="text-center mb-4">
+                Productos destacados
+            </h2>
+
+            <div class="row g-4">
+
+                <!-- Producto 1 -->
+
+                <article class="col-12 col-md-6 col-lg-4">
+
+                    <div class="card h-100 product-card">
+
+    <img
+        src="/beauty-store-vite/assets/producto-1-DAPcig9a.jpg"
+        class="card-img-top product-image"
+        alt="Lip Gloss">
+
+    <div class="card-body text-center">
+                        
+                            <h3 class="card-title h5">
+                                Lip Gloss
+                            </h3>
+
+                            <p class="card-text">
+                                Brillo labial de larga duración
+                                con acabado luminoso.
+                            </p>
+
+                            <p class="fw-bold">
+                                $15.00
+                            </p>
+
+                            <button
+    class="btn btn-dark btn-detalles"
+    data-nombre="Lip Gloss"
+    data-precio="$15.00"
+    data-descripcion="Brillo labial de larga duración con acabado luminoso."
+    data-imagen="./images/producto-1.jpg">
+    Ver detalles
+</button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Producto 2 -->
+
+                <!-- Producto 2 -->
+
+<article class="col-12 col-md-6 col-lg-4">
+
+    <div class="card h-100 product-card">
+
+        <img
+            src="/beauty-store-vite/assets/producto-2-CE55W4jd.jpg"
+            class="card-img-top product-image"
+            alt="Blush">
+
+        <div class="card-body text-center">
+
+            <h3 class="card-title h5">
+                Blush
+            </h3>
+
+            <p class="card-text">
+                Rubor suave para brindar un acabado
+                natural y radiante.
+            </p>
+
+            <p class="fw-bold">
+                $18.00
+            </p>
+
+            <button
+    class="btn btn-dark btn-detalles"
+    data-nombre="Blush"
+    data-precio="$18.00"
+    data-descripcion="Rubor suave para brindar un acabado natural y radiante."
+    data-imagen="./images/producto-2.jpg">
+    Ver detalles
+</button>
+
+        </div>
+
+    </div>
+
+</article>
+
+
+                <!-- Producto 3 -->
+
+                <article class="col-12 col-md-6 col-lg-4">
+
+                    <div class="card h-100 product-card">
+
+    <img
+        src="/beauty-store-vite/assets/producto-3-BvSMV9u7.jpg"
+        class="card-img-top product-image"
+        alt="Sérum facial">
+
+    <div class="card-body text-center">
+
+                            <h3 class="card-title h5">
+                                Sérum Facial
+                            </h3>
+
+                            <p class="card-text">
+                                Sérum hidratante para complementar
+                                tu rutina de cuidado facial.
+                            </p>
+
+                            <p class="fw-bold">
+                                $25.00
+                            </p>
+
+                            <button
+    class="btn btn-dark btn-detalles"
+    data-nombre="Sérum Facial"
+    data-precio="$25.00"
+    data-descripcion="Sérum hidratante para complementar tu rutina de cuidado facial."
+    data-imagen="./images/producto-3.jpg">
+    Ver detalles
+</button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ====================================
+             ASIDE / INFORMACIÓN ADICIONAL
+        ===================================== -->
+
+        <aside class="bg-light py-5">
+
+            <div class="container text-center">
+
+                <h2>
+                    Compra con confianza
+                </h2>
+
+                <p class="mb-0">
+
+                    Explora nuestros productos, conoce las
+                    novedades y encuentra opciones para
+                    complementar tu rutina de belleza.
+
+                </p>
+
+            </div>
+
+        </aside>
+
+
+        <!-- ====================================
+             NEWSLETTER
+        ===================================== -->
+
+        <section class="container py-5 text-center">
+
+            <h2>
+                Mantente al día
+            </h2>
+
+            <p>
+                Recibe información sobre nuevos productos
+                y promociones.
+            </p>
+
+            <a href="contacto.html"
+                class="btn btn-outline-dark">
+
+                Contáctanos
+
+            </a>
+
+        </section>
+
+    </main>
+<!-- ========================================
+     MODAL DE DETALLES DEL PRODUCTO
+========================================= -->
+
+<div
+    class="modal fade"
+    id="modalProducto"
+    tabindex="-1"
+    aria-labelledby="modalProductoTitulo"
+    aria-hidden="true">
+
+    <div class="modal-dialog modal-dialog-centered">
+
+        <div class="modal-content">
+
+            <div class="modal-header">
+
+                <h2
+                    class="modal-title fs-5"
+                    id="modalProductoTitulo">
+                    Detalles del producto
+                </h2>
+
+                <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Cerrar">
+                </button>
+
+            </div>
+
+            <div class="modal-body text-center">
+
+                <img
+                    id="modalProductoImagen"
+                    src=""
+                    class="img-fluid rounded mb-3 modal-product-image"
+                    alt="Producto seleccionado">
+
+                <h3
+                    id="modalProductoNombre"
+                    class="h4">
+                </h3>
+
+                <p
+                    id="modalProductoDescripcion">
+                </p>
+
+                <p
+                    id="modalProductoPrecio"
+                    class="fw-bold fs-5">
+                </p>
+
+            </div>
+
+            <div class="modal-footer">
+
+                <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal">
+                    Cerrar
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+   <!-- ========================================
+     FOOTER
+========================================= -->
+
+<footer class="bg-dark text-white text-center py-4">
+
+    <div class="container">
+
+        <p class="mb-1">
+            &copy; 2026 Beauty Store. Todos los derechos reservados.
+        </p>
+
+        <p class="mb-2">
+            Belleza, cuidado y estilo en un solo lugar.
+        </p>
+
+        <p class="mb-2">
+
+            <a
+                href="preguntas.html"
+                class="text-white text-decoration-none">
+                Preguntas frecuentes
+            </a>
+
+            <span class="mx-2">|</span>
+
+            <a
+                href="politicas.html"
+                class="text-white text-decoration-none">
+                Políticas
+            </a>
+
+        </p>
+
+        <p class="mb-0">
+            Proyecto académico desarrollado con
+            HTML5, CSS, Bootstrap, JavaScript y Vite.
+        </p>
+
+    </div>
+
+</footer>

@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Diseño responsivo para celulares, tabletas y computadoras -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Catálogo de productos de belleza de Beauty Store.">
+
+    <title>Beauty Store | Productos</title>
+
+    <!-- JavaScript principal que también importa Bootstrap y CSS -->
+  <script type="module" crossorigin src="/beauty-store-vite/assets/productos-B3v79zoy.js"></script>
+  <link rel="modulepreload" crossorigin href="/beauty-store-vite/assets/main-H7jxkXGY.js">
+  <link rel="stylesheet" crossorigin href="/beauty-store-vite/assets/main-DX67eQ_V.css">
+</head>
+
+<body>
+
+    <!-- ========================================
+         HEADER Y NAVEGACIÓN
+    ========================================= -->
+
+    <header>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+            <div class="container">
+
+                <a class="navbar-brand fw-bold"
+                    href="index.html">
+                    Beauty Store
+                </a>
+
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#menuPrincipal"
+                    aria-controls="menuPrincipal"
+                    aria-expanded="false"
+                    aria-label="Abrir menú">
+
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+
+                <div
+                    class="collapse navbar-collapse"
+                    id="menuPrincipal">
+
+                    <ul class="navbar-nav ms-auto">
+
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="index.html">
+                                Inicio
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active"
+                                href="productos.html">
+                                Productos
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="categorias.html">
+                                Categorías
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="ofertas.html">
+                                Ofertas
+                            </a>
+                        </li>
+
+<li class="nav-item">
+    <a class="nav-link"
+        href="favoritos.html">
+        Favoritos
+    </a>
+</li>
+
+<li class="nav-item">
+                            <a class="nav-link"
+                                href="carrito.html">
+                                Carrito
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="nosotros.html">
+                                Nosotros
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="contacto.html">
+                                Contacto
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ========================================
+         CONTENIDO PRINCIPAL
+    ========================================= -->
+
+    <main>
+
+        <!-- Encabezado -->
+
+        <section class="bg-light py-5 text-center">
+
+            <div class="container">
+
+                <h1 class="fw-bold">
+                    Nuestros Productos
+                </h1>
+
+                <p class="lead mb-0">
+                    Explora nuestra selección de maquillaje
+                    y productos para el cuidado personal.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ====================================
+             CATÁLOGO DE PRODUCTOS
+        ===================================== -->
+
+        <section class="container py-5">
+
+            <div class="row g-4">
+
+
+                <!-- Producto 1 -->
+
+                <article class="col-12 col-md-6 col-lg-4">
+
+                    <div class="card h-100 product-card">
+
+                        <img
+                            src="/beauty-store-vite/assets/producto-1-DAPcig9a.jpg"
+                            class="card-img-top product-image"
+                            alt="Lip Gloss">
+
+                        <div class="card-body text-center">
+
+                            <h2 class="card-title h5">
+                                Lip Gloss
+                            </h2>
+
+                            <p class="card-text">
+                                Brillo labial de larga duración
+                                con acabado luminoso.
+                            </p>
+
+                            <p class="fw-bold">
+                                $15.00
+                            </p>
+
+                            <button
+                                class="btn btn-dark btn-detalles"
+                                data-nombre="Lip Gloss"
+                                data-precio="$15.00"
+                                data-descripcion="Brillo labial de larga duración con acabado luminoso."
+                                data-imagen="./images/producto-1.jpg">
+
+                                Ver detalles
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Producto 2 -->
+
+                <article class="col-12 col-md-6 col-lg-4">
+
+                    <div class="card h-100 product-card">
+
+                        <img
+                            src="/beauty-store-vite/assets/producto-2-CE55W4jd.jpg"
+                            class="card-img-top product-image"
+                            alt="Blush">
+
+                        <div class="card-body text-center">
+
+                            <h2 class="card-title h5">
+                                Blush
+                            </h2>
+
+                            <p class="card-text">
+                                Rubor suave para un acabado
+                                natural y radiante.
+                            </p>
+
+                            <p class="fw-bold">
+                                $18.00
+                            </p>
+
+                            <button
+                                class="btn btn-dark btn-detalles"
+                                data-nombre="Blush"
+                                data-precio="$18.00"
+                                data-descripcion="Rubor suave para brindar un acabado natural y radiante."
+                                data-imagen="./images/producto-2.jpg">
+
+                                Ver detalles
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Producto 3 -->
+
+                <article class="col-12 col-md-6 col-lg-4">
+
+                    <div class="card h-100 product-card">
+
+                        <img
+                            src="/beauty-store-vite/assets/producto-3-BvSMV9u7.jpg"
+                            class="card-img-top product-image"
+                            alt="Sérum facial">
+
+                        <div class="card-body text-center">
+
+                            <h2 class="card-title h5">
+                                Sérum Facial
+                            </h2>
+
+                            <p class="card-text">
+                                Sérum hidratante para complementar
+                                tu rutina facial.
+                            </p>
+
+                            <p class="fw-bold">
+                                $25.00
+                            </p>
+
+                            <button
+                                class="btn btn-dark btn-detalles"
+                                data-nombre="Sérum Facial"
+                                data-precio="$25.00"
+                                data-descripcion="Sérum hidratante para complementar tu rutina de cuidado facial."
+                                data-imagen="./images/producto-3.jpg">
+
+                                Ver detalles
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Producto 4 -->
+
+                <article class="col-12 col-md-6 col-lg-4">
+
+                    <div class="card h-100 product-card">
+
+                        <img
+                            src="/beauty-store-vite/assets/producto-4-c4S0dcSG.jpg"
+                            class="card-img-top product-image"
+                            alt="Máscara de pestañas">
+
+                        <div class="card-body text-center">
+
+                            <h2 class="card-title h5">
+                                Máscara de Pestañas
+                            </h2>
+
+                            <p class="card-text">
+                                Máscara diseñada para aportar
+                                definición y volumen.
+                            </p>
+
+                            <p class="fw-bold">
+                                $20.00
+                            </p>
+
+                            <button
+                                class="btn btn-dark btn-detalles"
+                                data-nombre="Máscara de Pestañas"
+                                data-precio="$20.00"
+                                data-descripcion="Máscara diseñada para aportar definición y volumen a las pestañas."
+                                data-imagen="./images/producto-4.jpg">
+
+                                Ver detalles
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Producto 5 -->
+
+                <article class="col-12 col-md-6 col-lg-4">
+
+                    <div class="card h-100 product-card">
+
+                        <img
+                            src="/beauty-store-vite/assets/producto-5-BCXGipIl.jpg"
+                            class="card-img-top product-image"
+                            alt="Crema facial">
+
+                        <div class="card-body text-center">
+
+                            <h2 class="card-title h5">
+                                Crema Facial
+                            </h2>
+
+                            <p class="card-text">
+                                Crema hidratante para complementar
+                                tu rutina diaria.
+                            </p>
+
+                            <p class="fw-bold">
+                                $28.00
+                            </p>
+
+                            <button
+                                class="btn btn-dark btn-detalles"
+                                data-nombre="Crema Facial"
+                                data-precio="$28.00"
+                                data-descripcion="Crema hidratante diseñada para complementar una rutina diaria de cuidado facial."
+                                data-imagen="./images/producto-5.jpg">
+
+                                Ver detalles
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Producto 6 -->
+
+                <article class="col-12 col-md-6 col-lg-4">
+
+                    <div class="card h-100 product-card">
+
+                        <img
+                            src="/beauty-store-vite/assets/producto-6-Cf5GZ4-s.jpg"
+                            class="card-img-top product-image"
+                            alt="Paleta de sombras">
+
+                        <div class="card-body text-center">
+
+                            <h2 class="card-title h5">
+                                Paleta de Sombras
+                            </h2>
+
+                            <p class="card-text">
+                                Tonos versátiles para crear
+                                diferentes estilos de maquillaje.
+                            </p>
+
+                            <p class="fw-bold">
+                                $32.00
+                            </p>
+
+                            <button
+                                class="btn btn-dark btn-detalles"
+                                data-nombre="Paleta de Sombras"
+                                data-precio="$32.00"
+                                data-descripcion="Paleta con tonos versátiles para crear diferentes estilos de maquillaje."
+                                data-imagen="./images/producto-6.jpg">
+
+                                Ver detalles
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ========================================
+         MODAL DE DETALLES
+    ========================================= -->
+
+    <div
+        class="modal fade"
+        id="modalProducto"
+        tabindex="-1"
+        aria-labelledby="modalProductoTitulo"
+        aria-hidden="true">
+
+        <div class="modal-dialog modal-dialog-centered">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+
+                    <h2
+                        class="modal-title fs-5"
+                        id="modalProductoTitulo">
+                        Detalles del producto
+                    </h2>
+
+                    <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Cerrar">
+                    </button>
+
+                </div>
+
+                <div class="modal-body text-center">
+
+                    <img
+                        id="modalProductoImagen"
+                        src=""
+                        class="img-fluid rounded mb-3 modal-product-image"
+                        alt="Producto seleccionado">
+
+                    <h3
+                        id="modalProductoNombre"
+                        class="h4">
+                    </h3>
+
+                    <p id="modalProductoDescripcion">
+                    </p>
+
+                    <p
+                        id="modalProductoPrecio"
+                        class="fw-bold fs-5">
+                    </p>
+
+                </div>
+
+                <div class="modal-footer">
+
+                    <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal">
+                        Cerrar
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+     <!-- ========================================
+     FOOTER
+========================================= -->
+
+<footer class="bg-dark text-white text-center py-4">
+
+    <div class="container">
+
+        <p class="mb-1">
+            &copy; 2026 Beauty Store. Todos los derechos reservados.
+        </p>
+
+        <p class="mb-2">
+            Belleza, cuidado y estilo en un solo lugar.
+        </p>
+
+        <p class="mb-2">
+
+            <a
+                href="preguntas.html"
+                class="text-white text-decoration-none">
+                Preguntas frecuentes
+            </a>
+
+            <span class="mx-2">|</span>
+
+            <a
+                href="politicas.html"
+                class="text-white text-decoration-none">
+                Políticas
+            </a>
+
+        </p>
+
+        <p class="mb-0">
+            Proyecto académico desarrollado con
+            HTML5, CSS, Bootstrap, JavaScript y Vite.
+        </p>
+
+    </div>
+
+</footer>

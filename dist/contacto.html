@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Formulario de contacto de Beauty Store.">
+
+    <title>Beauty Store | Contacto</title>
+
+  <script type="module" crossorigin src="/beauty-store-vite/assets/contacto-B3v79zoy.js"></script>
+  <link rel="modulepreload" crossorigin href="/beauty-store-vite/assets/main-H7jxkXGY.js">
+  <link rel="stylesheet" crossorigin href="/beauty-store-vite/assets/main-DX67eQ_V.css">
+</head>
+
+<body>
+
+    <!-- ========================================
+         HEADER Y NAVEGACIÓN
+    ========================================= -->
+
+    <header>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+            <div class="container">
+
+                <a class="navbar-brand fw-bold"
+                    href="index.html">
+                    Beauty Store
+                </a>
+
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#menuPrincipal"
+                    aria-controls="menuPrincipal"
+                    aria-expanded="false"
+                    aria-label="Abrir menú">
+
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+
+                <div
+                    class="collapse navbar-collapse"
+                    id="menuPrincipal">
+
+                    <ul class="navbar-nav ms-auto">
+
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="index.html">
+                                Inicio
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="productos.html">
+                                Productos
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="categorias.html">
+                                Categorías
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="ofertas.html">
+                                Ofertas
+                            </a>
+                        </li>
+
+<li class="nav-item">
+    <a class="nav-link"
+        href="favoritos.html">
+        Favoritos
+    </a>
+</li>
+
+<li class="nav-item">
+                            <a class="nav-link"
+                                href="carrito.html">
+                                Carrito
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="nosotros.html">
+                                Nosotros
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a
+                                class="nav-link active"
+                                href="contacto.html">
+                                Contacto
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ========================================
+         CONTENIDO PRINCIPAL
+    ========================================= -->
+
+    <main>
+
+        <!-- Encabezado de la página -->
+
+        <section class="bg-light py-5 text-center">
+
+            <div class="container">
+
+                <h1 class="fw-bold">
+                    Contáctanos
+                </h1>
+
+                <p class="lead mb-0">
+                    ¿Tienes alguna pregunta?
+                    Envíanos un mensaje.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ====================================
+             FORMULARIO DE CONTACTO
+        ===================================== -->
+
+        <section class="container py-5">
+
+            <div class="row justify-content-center">
+
+                <div class="col-12 col-md-10 col-lg-7">
+
+                    <div class="card shadow-sm">
+
+                        <div class="card-body p-4">
+
+                            <h2 class="h4 mb-4">
+                                Formulario de contacto
+                            </h2>
+
+                            <form id="formContacto" novalidate>
+
+                                <!-- Nombre -->
+
+                                <div class="mb-3">
+
+                                    <label
+                                        for="nombre"
+                                        class="form-label">
+
+                                        Nombre
+
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="nombre"
+                                        name="nombre"
+                                        required
+                                        minlength="3">
+
+                                    <div class="invalid-feedback">
+                                        Escribe un nombre de al menos 3 caracteres.
+                                    </div>
+
+                                    <div class="valid-feedback">
+                                        Nombre válido.
+                                    </div>
+
+                                </div>
+
+
+                                <!-- Email -->
+
+                                <div class="mb-3">
+
+                                    <label
+                                        for="email"
+                                        class="form-label">
+
+                                        Correo electrónico
+
+                                    </label>
+
+                                    <input
+                                        type="email"
+                                        class="form-control"
+                                        id="email"
+                                        name="email"
+                                        required>
+
+                                    <div class="invalid-feedback">
+                                        Escribe un correo electrónico válido.
+                                    </div>
+
+                                    <div class="valid-feedback">
+                                        Correo electrónico válido.
+                                    </div>
+
+                                </div>
+
+
+                                <!-- Asunto -->
+
+                                <div class="mb-3">
+
+                                    <label
+                                        for="asunto"
+                                        class="form-label">
+
+                                        Asunto
+
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="asunto"
+                                        name="asunto"
+                                        required
+                                        minlength="5">
+
+                                    <div class="invalid-feedback">
+                                        El asunto debe tener al menos 5 caracteres.
+                                    </div>
+
+                                    <div class="valid-feedback">
+                                        Asunto válido.
+                                    </div>
+
+                                </div>
+
+
+                                <!-- Mensaje -->
+
+                                <div class="mb-3">
+
+                                    <label
+                                        for="mensaje"
+                                        class="form-label">
+
+                                        Mensaje
+
+                                    </label>
+
+                                    <textarea
+                                        class="form-control"
+                                        id="mensaje"
+                                        name="mensaje"
+                                        rows="5"
+                                        required
+                                        minlength="10">
+                                    </textarea>
+
+                                    <div class="invalid-feedback">
+                                        El mensaje debe tener al menos 10 caracteres.
+                                    </div>
+
+                                    <div class="valid-feedback">
+                                        Mensaje válido.
+                                    </div>
+
+                                </div>
+
+
+                                <!-- Botón -->
+
+                                <button
+                                    type="submit"
+                                    class="btn btn-dark w-100">
+
+                                    Enviar mensaje
+
+                                </button>
+
+                            </form>
+
+
+                            <!-- Mensaje de éxito -->
+
+                            <div
+                                id="mensajeExito"
+                                class="alert alert-success mt-4 d-none"
+                                role="alert">
+
+                                ¡Formulario enviado correctamente!
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+  <!-- ========================================
+         FOOTER
+    ========================================= -->
+
+    <footer class="bg-dark text-white text-center py-4">
+
+        <div class="container">
+
+            <p class="mb-1">
+    &copy; 2026 Beauty Store. Todos los derechos reservados.
+</p>
+
+<p class="mb-0">
+    Belleza, cuidado y estilo en un solo lugar.
+</p>
+
+            <p class="mb-0">
+                Proyecto académico desarrollado con
+                HTML5, CSS, Bootstrap, JavaScript y Vite.
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
