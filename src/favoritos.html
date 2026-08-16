@@ -148,240 +148,218 @@
 
 
         <!-- ====================================
-             PRODUCTOS FAVORITOS
-        ===================================== -->
+     PRODUCTOS FAVORITOS
+===================================== -->
 
-        <section class="container py-5">
+<section class="container py-5">
 
-            <div class="row g-4">
+    <h2 class="text-center mb-4">
+        Tus favoritos
+    </h2>
+
+    <div class="row g-4">
 
 
-                <!-- ====================================
-                     FAVORITO 1
-                ===================================== -->
+        <!-- FAVORITO 1 -->
 
-              <article class="col-12 col-md-6 col-lg-4">
+        <article class="col-12 col-md-6 col-lg-4">
 
-    <div class="card h-100 product-card">
+            <div class="card h-100 product-card">
 
-        <img
-            src="./images/producto-1.jpg"
-            class="card-img-top product-image"
-            alt="Lip Gloss">
-
-        <div class="card-body text-center">
-
-            <!-- Corazón de favorito -->
-            <div class="mb-3">
-
-                <svg
-                    width="40"
-                    height="40"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                    role="img"
+                <span
+                    class="position-absolute top-0 end-0 m-3 fs-3"
+                    style="z-index: 2;"
                     aria-label="Producto favorito">
 
-                    <path
-                        fill="#dc3545"
-                        d="M12 21.35
-                        l-1.45-1.32
-                        C5.4 15.36 2 12.28 2 8.5
-                        C2 5.42 4.42 3 7.5 3
-                        c1.74 0 3.41.81 4.5 2.09
-                        C13.09 3.81 14.76 3 16.5 3
-                        C19.58 3 22 5.42 22 8.5
-                        c0 3.78-3.4 6.86-8.55 11.54
-                        L12 21.35z">
-                    </path>
+                    ♥️
 
-                </svg>
+                </span>
+
+                <img
+                    src="./images/producto-1.jpg"
+                    class="card-img-top product-image"
+                    alt="Lip Gloss">
+
+                <div class="card-body text-center d-flex flex-column">
+
+                    <h2 class="card-title h5">
+                        Lip Gloss
+                    </h2>
+
+                    <p class="card-text">
+                        Brillo labial de larga duración
+                        con acabado luminoso.
+                    </p>
+
+                    <p class="fw-bold">
+                        $15.00
+                    </p>
+
+                    <div class="d-grid gap-2 mt-auto">
+
+                        <button
+                            class="btn btn-dark btn-detalles"
+                            data-nombre="Lip Gloss"
+                            data-precio="$15.00"
+                            data-descripcion="Brillo labial de larga duración con acabado luminoso.">
+
+                            Ver detalles
+
+                        </button>
+
+                        <button
+                            class="btn btn-outline-dark btn-carrito"
+                            data-id="1"
+                            data-nombre="Lip Gloss"
+                            data-precio="15">
+
+                            Añadir al carrito
+
+                        </button>
+
+                    </div>
+
+                </div>
 
             </div>
 
-            <h2 class="card-title h5">
-                Lip Gloss
-            </h2>
+        </article>
 
-            <p class="card-text">
-                Brillo labial con acabado luminoso
-                para complementar tu maquillaje.
-            </p>
 
-            <p class="fw-bold">
-                $15.00
-            </p>
+        <!-- FAVORITO 2 -->
 
-            <button
-                class="btn btn-dark btn-detalles"
-                data-nombre="Lip Gloss"
-                data-precio="$15.00"
-                data-descripcion="Brillo labial de larga duración con acabado luminoso."
-                data-imagen="./images/producto-1.jpg">
+        <article class="col-12 col-md-6 col-lg-4">
 
-                Ver detalles
+            <div class="card h-100 product-card">
 
-            </button>
+                <span
+                    class="position-absolute top-0 end-0 m-3 fs-3"
+                    style="z-index: 2;"
+                    aria-label="Producto favorito">
 
-        </div>
+                    ♥️
+
+                </span>
+
+                <img
+                    src="./images/producto-3.jpg"
+                    class="card-img-top product-image"
+                    alt="Sérum Facial">
+
+                <div class="card-body text-center d-flex flex-column">
+
+                    <h2 class="card-title h5">
+                        Sérum Facial
+                    </h2>
+
+                    <p class="card-text">
+                        Sérum hidratante para complementar
+                        tu rutina de cuidado facial.
+                    </p>
+
+                    <p class="fw-bold">
+                        $25.00
+                    </p>
+
+                    <div class="d-grid gap-2 mt-auto">
+
+                        <button
+                            class="btn btn-dark btn-detalles"
+                            data-nombre="Sérum Facial"
+                            data-precio="$25.00"
+                            data-descripcion="Sérum hidratante para complementar tu rutina de cuidado facial.">
+
+                            Ver detalles
+
+                        </button>
+
+                        <button
+                            class="btn btn-outline-dark btn-carrito"
+                            data-id="3"
+                            data-nombre="Sérum Facial"
+                            data-precio="25">
+
+                            Añadir al carrito
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- FAVORITO 3 -->
+
+        <article class="col-12 col-md-6 col-lg-4">
+
+            <div class="card h-100 product-card">
+
+                <span
+                    class="position-absolute top-0 end-0 m-3 fs-3"
+                    style="z-index: 2;"
+                    aria-label="Producto favorito">
+
+                    ♥️
+
+                </span>
+
+                <img
+                    src="./images/producto-6.jpg"
+                    class="card-img-top product-image"
+                    alt="Paleta de Sombras">
+
+                <div class="card-body text-center d-flex flex-column">
+
+                    <h2 class="card-title h5">
+                        Paleta de Sombras
+                    </h2>
+
+                    <p class="card-text">
+                        Tonos versátiles para crear
+                        diferentes estilos de maquillaje.
+                    </p>
+
+                    <p class="fw-bold">
+                        $32.00
+                    </p>
+
+                    <div class="d-grid gap-2 mt-auto">
+
+                        <button
+                            class="btn btn-dark btn-detalles"
+                            data-nombre="Paleta de Sombras"
+                            data-precio="$32.00"
+                            data-descripcion="Paleta con tonos versátiles para crear diferentes estilos de maquillaje.">
+
+                            Ver detalles
+
+                        </button>
+
+                        <button
+                            class="btn btn-outline-dark btn-carrito"
+                            data-id="6"
+                            data-nombre="Paleta de Sombras"
+                            data-precio="32">
+
+                            Añadir al carrito
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </article>
 
     </div>
 
-</article>
-
-                            
-
-
-                <!-- ====================================
-                     FAVORITO 2
-                ===================================== -->
-
-                <article class="col-12 col-md-6 col-lg-4">
-
-                    <div class="card h-100 product-card">
-
-                        <img
-                            src="./images/producto-3.jpg"
-                            class="card-img-top product-image"
-                            alt="Sérum Facial">
-
-                        <div class="card-body text-center">
-
-                            <!-- Corazón SVG -->
-                            <div class="mb-3">
-
-                                <svg
-                                    width="40"
-                                    height="40"
-                                    viewBox="0 0 24 24"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    role="img"
-                                    aria-label="Producto favorito">
-
-                                    <path
-                                        fill="#dc3545"
-                                        d="M12 21.35
-                                        l-1.45-1.32
-                                        C5.4 15.36 2 12.28 2 8.5
-                                        C2 5.42 4.42 3 7.5 3
-                                        c1.74 0 3.41.81 4.5 2.09
-                                        C13.09 3.81 14.76 3 16.5 3
-                                        C19.58 3 22 5.42 22 8.5
-                                        c0 3.78-3.4 6.86-8.55 11.54
-                                        L12 21.35z">
-                                    </path>
-
-                                </svg>
-
-                            </div>
-
-                            <h2 class="card-title h5">
-                                Sérum Facial
-                            </h2>
-
-                            <p class="card-text">
-                                Sérum hidratante para complementar
-                                tu rutina de cuidado facial.
-                            </p>
-
-                            <p class="fw-bold">
-                                $25.00
-                            </p>
-
-                            <button
-                                class="btn btn-dark btn-detalles"
-                                data-nombre="Sérum Facial"
-                                data-precio="$25.00"
-                                data-descripcion="Sérum hidratante para complementar tu rutina de cuidado facial."
-                                data-imagen="./images/producto-3.jpg">
-
-                                Ver detalles
-
-                            </button>
-
-                        </div>
-
-                    </div>
-
-                </article>
-
-
-                <!-- ====================================
-                     FAVORITO 3
-                ===================================== -->
-
-                <article class="col-12 col-md-6 col-lg-4">
-
-                    <div class="card h-100 product-card">
-
-                        <img
-                            src="./images/producto-6.jpg"
-                            class="card-img-top product-image"
-                            alt="Paleta de Sombras">
-
-                        <div class="card-body text-center">
-
-                            <!-- Corazón SVG -->
-                            <div class="mb-3">
-
-                                <svg
-                                    width="40"
-                                    height="40"
-                                    viewBox="0 0 24 24"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    role="img"
-                                    aria-label="Producto favorito">
-
-                                    <path
-                                        fill="#dc3545"
-                                        d="M12 21.35
-                                        l-1.45-1.32
-                                        C5.4 15.36 2 12.28 2 8.5
-                                        C2 5.42 4.42 3 7.5 3
-                                        c1.74 0 3.41.81 4.5 2.09
-                                        C13.09 3.81 14.76 3 16.5 3
-                                        C19.58 3 22 5.42 22 8.5
-                                        c0 3.78-3.4 6.86-8.55 11.54
-                                        L12 21.35z">
-                                    </path>
-
-                                </svg>
-
-                            </div>
-
-                            <h2 class="card-title h5">
-                                Paleta de Sombras
-                            </h2>
-
-                            <p class="card-text">
-                                Tonos versátiles para crear
-                                diferentes estilos de maquillaje.
-                            </p>
-
-                            <p class="fw-bold">
-                                $32.00
-                            </p>
-
-                            <button
-                                class="btn btn-dark btn-detalles"
-                                data-nombre="Paleta de Sombras"
-                                data-precio="$32.00"
-                                data-descripcion="Paleta con tonos versátiles para crear diferentes estilos."
-                                data-imagen="./images/producto-6.jpg">
-
-                                Ver detalles
-
-                            </button>
-
-                        </div>
-
-                    </div>
-
-                </article>
-
-            </div>
-
-        </section>
+</section>
 
 
         <!-- ====================================

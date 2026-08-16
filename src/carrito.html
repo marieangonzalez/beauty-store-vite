@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
 
-    <!-- Permite que la página se adapte a celulares, tabletas y computadoras -->
+    <!-- Permite que la página sea responsiva -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="description"
-        content="Carrito de compras demostrativo de Beauty Store.">
+        content="Carrito de compras de Beauty Store.">
 
     <title>Beauty Store | Carrito</title>
 
@@ -87,12 +87,12 @@
                             </a>
                         </li>
 
-                    <li class="nav-item">
-    <a class="nav-link active"
-        href="carrito.html">
-        Carrito
-    </a>
-</li>
+                        <li class="nav-item">
+                            <a class="nav-link active"
+                                href="carrito.html">
+                                Carrito
+                            </a>
+                        </li>
 
                         <li class="nav-item">
                             <a class="nav-link"
@@ -125,7 +125,9 @@
 
     <main>
 
-        <!-- ENCABEZADO -->
+        <!-- ====================================
+             ENCABEZADO
+        ===================================== -->
 
         <section class="bg-light py-5 text-center">
 
@@ -151,9 +153,40 @@
 
         <section class="container py-5">
 
-            <div class="row g-4">
+            <!-- Mensaje cuando el carrito está vacío -->
 
-                <!-- Productos -->
+            <div
+                id="carritoVacio"
+                class="text-center py-5 d-none">
+
+                <h2 class="h3">
+                    Tu carrito está vacío
+                </h2>
+
+                <p>
+                    Añade algunos productos para comenzar tu compra.
+                </p>
+
+                <a
+                    href="productos.html"
+                    class="btn btn-dark">
+
+                    Ver productos
+
+                </a>
+
+            </div>
+
+
+            <!-- Contenido del carrito -->
+
+            <div
+                id="contenidoCarrito"
+                class="row g-4">
+
+                <!-- ====================================
+                     TABLA DE PRODUCTOS
+                ===================================== -->
 
                 <div class="col-12 col-lg-8">
 
@@ -164,94 +197,56 @@
                             <thead class="table-dark">
 
                                 <tr>
-                                    <th>Producto</th>
-                                    <th>Precio</th>
-                                    <th>Cantidad</th>
-                                    <th>Total</th>
+
+                                    <th>
+                                        Producto
+                                    </th>
+
+                                    <th>
+                                        Precio
+                                    </th>
+
+                                    <th class="text-center">
+                                        Cantidad
+                                    </th>
+
+                                    <th>
+                                        Total
+                                    </th>
+
+                                    <th class="text-center">
+                                        Acción
+                                    </th>
+
                                 </tr>
 
                             </thead>
 
-                            <tbody>
+                            <!--
+                            JavaScript agregará aquí
+                            los productos del carrito.
+                            -->
 
-                                <!-- Producto 1 -->
-
-                                <tr>
-
-                                    <td>
-
-                                        <div class="d-flex align-items-center gap-3">
-
-                                            <img
-                                                src="./images/producto-1.jpg"
-                                                alt="Lip Gloss"
-                                                width="70"
-                                                height="70"
-                                                class="rounded object-fit-cover">
-
-                                            <span>
-                                                Lip Gloss
-                                            </span>
-
-                                        </div>
-
-                                    </td>
-
-                                    <td>
-                                        $15.00
-                                    </td>
-
-                                    <td>
-                                        1
-                                    </td>
-
-                                    <td class="fw-bold">
-                                        $15.00
-                                    </td>
-
-                                </tr>
-
-
-                                <!-- Producto 2 -->
-
-                                <tr>
-
-                                    <td>
-
-                                        <div class="d-flex align-items-center gap-3">
-
-                                            <img
-                                                src="./images/producto-3.jpg"
-                                                alt="Sérum Facial"
-                                                width="70"
-                                                height="70"
-                                                class="rounded object-fit-cover">
-
-                                            <span>
-                                                Sérum Facial
-                                            </span>
-
-                                        </div>
-
-                                    </td>
-
-                                    <td>
-                                        $25.00
-                                    </td>
-
-                                    <td>
-                                        1
-                                    </td>
-
-                                    <td class="fw-bold">
-                                        $25.00
-                                    </td>
-
-                                </tr>
-
+                            <tbody id="carritoProductos">
                             </tbody>
 
                         </table>
+
+                    </div>
+
+
+                    <!-- Botón para vaciar todo -->
+
+                    <div class="text-end mt-3">
+
+                        <button
+                            id="vaciarCarrito"
+                            type="button"
+                            class="btn btn-outline-dark">
+
+                            Vaciar carrito
+
+                        </button>
 
                     </div>
 
@@ -266,27 +261,46 @@
 
                     <div class="card shadow-sm">
 
-                        <div class="card-body">
+                        <div class="card-body p-4">
 
                             <h2 class="h4 mb-4">
                                 Resumen del pedido
                             </h2>
 
-                            <div class="d-flex justify-content-between">
+
+                            <div
+                                class="d-flex justify-content-between mb-3">
+
+                                <span>
+                                    Productos
+                                </span>
+
+                                <span id="cantidadProductos">
+                                    0
+                                </span>
+
+                            </div>
+
+
+                            <div
+                                class="d-flex justify-content-between">
 
                                 <span>
                                     Subtotal
                                 </span>
 
-                                <span>
-                                    $40.00
+                                <span id="subtotalCarrito">
+                                    $0.00
                                 </span>
 
                             </div>
 
+
                             <hr>
 
-                            <div class="d-flex justify-content-between">
+
+                            <div
+                                class="d-flex justify-content-between">
 
                                 <span>
                                     Envío
@@ -298,21 +312,26 @@
 
                             </div>
 
+
                             <hr>
 
-                            <div class="d-flex justify-content-between fw-bold fs-5">
+
+                            <div
+                                class="d-flex justify-content-between fw-bold fs-5">
 
                                 <span>
                                     Total
                                 </span>
 
-                                <span>
-                                    $40.00
+                                <span id="totalCarrito">
+                                    $0.00
                                 </span>
 
                             </div>
 
+
                             <button
+                                id="procederPago"
                                 type="button"
                                 class="btn btn-dark w-100 mt-4">
 
@@ -362,45 +381,55 @@
     </main>
 
 
-<!-- ========================================
-     FOOTER
-========================================= -->
+    <!-- ========================================
+         FOOTER
+    ========================================= -->
 
-<footer class="bg-dark text-white text-center py-4">
+    <footer class="bg-dark text-white text-center py-4">
 
-    <div class="container">
+        <div class="container">
 
-        <p class="mb-1">
-            &copy; 2026 Beauty Store. Todos los derechos reservados.
-        </p>
+            <p class="mb-1">
+                &copy; 2026 Beauty Store. Todos los derechos reservados.
+            </p>
 
-        <p class="mb-2">
-            Belleza, cuidado y estilo en un solo lugar.
-        </p>
+            <p class="mb-2">
+                Belleza, cuidado y estilo en un solo lugar.
+            </p>
 
-        <p class="mb-2">
+            <p class="mb-2">
 
-            <a
-                href="preguntas.html"
-                class="text-white text-decoration-none">
-                Preguntas frecuentes
-            </a>
+                <a
+                    href="preguntas.html"
+                    class="text-white text-decoration-none">
 
-            <span class="mx-2">|</span>
+                    Preguntas frecuentes
 
-            <a
-                href="politicas.html"
-                class="text-white text-decoration-none">
-                Políticas
-            </a>
+                </a>
 
-        </p>
+                <span class="mx-2">
+                    |
+                </span>
 
-        <p class="mb-0">
-            Proyecto académico desarrollado con
-            HTML5, CSS, Bootstrap, JavaScript y Vite.
-        </p>
+                <a
+                    href="politicas.html"
+                    class="text-white text-decoration-none">
 
-    </div>
+                    Políticas
 
-</footer>
+                </a>
+
+            </p>
+
+            <p class="mb-0">
+                Proyecto académico desarrollado con
+                HTML5, CSS, Bootstrap, JavaScript y Vite.
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

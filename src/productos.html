@@ -146,282 +146,418 @@
 
 
         <!-- ====================================
-             CATÁLOGO DE PRODUCTOS
+     CATÁLOGO DE PRODUCTOS
+===================================== -->
+
+<section class="container py-5">
+
+    <div class="row g-4">
+
+
+        <!-- ====================================
+             PRODUCTO 1 - LIP GLOSS
         ===================================== -->
 
-        <section class="container py-5">
+        <article class="col-12 col-md-6 col-lg-4">
 
-            <div class="row g-4">
+            <div class="card h-100 product-card">
 
+                <img
+                    src="./images/producto-1.jpg"
+                    class="card-img-top product-image"
+                    alt="Lip Gloss">
 
-                <!-- Producto 1 -->
+                <div class="card-body text-center">
 
-                <article class="col-12 col-md-6 col-lg-4">
+                    <h2 class="card-title h5">
+                        Lip Gloss
+                    </h2>
 
-                    <div class="card h-100 product-card">
+                    <p class="card-text">
+                        Brillo labial de larga duración
+                        con acabado luminoso.
+                    </p>
 
-                        <img
-                            src="./images/producto-1.jpg"
-                            class="card-img-top product-image"
-                            alt="Lip Gloss">
+                    <p class="fw-bold">
+                        $15.00
+                    </p>
 
-                        <div class="card-body text-center">
+                    <div class="d-grid gap-2">
 
-                            <h2 class="card-title h5">
-                                Lip Gloss
-                            </h2>
+                        <!-- Botón de detalles -->
 
-                            <p class="card-text">
-                                Brillo labial de larga duración
-                                con acabado luminoso.
-                            </p>
+                        <button
+                            class="btn btn-dark btn-detalles"
+                            data-nombre="Lip Gloss"
+                            data-precio="$15.00"
+                            data-descripcion="Brillo labial de larga duración con acabado luminoso."
+                            data-imagen="./images/producto-1.jpg">
 
-                            <p class="fw-bold">
-                                $15.00
-                            </p>
+                            Ver detalles
 
-                            <button
-                                class="btn btn-dark btn-detalles"
-                                data-nombre="Lip Gloss"
-                                data-precio="$15.00"
-                                data-descripcion="Brillo labial de larga duración con acabado luminoso."
-                                data-imagen="./images/producto-1.jpg">
-
-                                Ver detalles
-
-                            </button>
-
-                        </div>
-
-                    </div>
-
-                </article>
+                        </button>
 
 
-                <!-- Producto 2 -->
+                        <!-- Botón de carrito -->
 
-                <article class="col-12 col-md-6 col-lg-4">
+                        <button
+                            class="btn btn-outline-dark btn-carrito"
+                            data-id="1"
+                            data-nombre="Lip Gloss"
+                            data-precio="15"
+                            data-imagen="./images/producto-1.jpg">
 
-                    <div class="card h-100 product-card">
+                            Añadir al carrito
 
-                        <img
-                            src="./images/producto-2.jpg"
-                            class="card-img-top product-image"
-                            alt="Blush">
-
-                        <div class="card-body text-center">
-
-                            <h2 class="card-title h5">
-                                Blush
-                            </h2>
-
-                            <p class="card-text">
-                                Rubor suave para un acabado
-                                natural y radiante.
-                            </p>
-
-                            <p class="fw-bold">
-                                $18.00
-                            </p>
-
-                            <button
-                                class="btn btn-dark btn-detalles"
-                                data-nombre="Blush"
-                                data-precio="$18.00"
-                                data-descripcion="Rubor suave para brindar un acabado natural y radiante."
-                                data-imagen="./images/producto-2.jpg">
-
-                                Ver detalles
-
-                            </button>
-
-                        </div>
+                        </button>
 
                     </div>
 
-                </article>
-
-
-                <!-- Producto 3 -->
-
-                <article class="col-12 col-md-6 col-lg-4">
-
-                    <div class="card h-100 product-card">
-
-                        <img
-                            src="./images/producto-3.jpg"
-                            class="card-img-top product-image"
-                            alt="Sérum facial">
-
-                        <div class="card-body text-center">
-
-                            <h2 class="card-title h5">
-                                Sérum Facial
-                            </h2>
-
-                            <p class="card-text">
-                                Sérum hidratante para complementar
-                                tu rutina facial.
-                            </p>
-
-                            <p class="fw-bold">
-                                $25.00
-                            </p>
-
-                            <button
-                                class="btn btn-dark btn-detalles"
-                                data-nombre="Sérum Facial"
-                                data-precio="$25.00"
-                                data-descripcion="Sérum hidratante para complementar tu rutina de cuidado facial."
-                                data-imagen="./images/producto-3.jpg">
-
-                                Ver detalles
-
-                            </button>
-
-                        </div>
-
-                    </div>
-
-                </article>
-
-
-                <!-- Producto 4 -->
-
-                <article class="col-12 col-md-6 col-lg-4">
-
-                    <div class="card h-100 product-card">
-
-                        <img
-                            src="./images/producto-4.jpg"
-                            class="card-img-top product-image"
-                            alt="Máscara de pestañas">
-
-                        <div class="card-body text-center">
-
-                            <h2 class="card-title h5">
-                                Máscara de Pestañas
-                            </h2>
-
-                            <p class="card-text">
-                                Máscara diseñada para aportar
-                                definición y volumen.
-                            </p>
-
-                            <p class="fw-bold">
-                                $20.00
-                            </p>
-
-                            <button
-                                class="btn btn-dark btn-detalles"
-                                data-nombre="Máscara de Pestañas"
-                                data-precio="$20.00"
-                                data-descripcion="Máscara diseñada para aportar definición y volumen a las pestañas."
-                                data-imagen="./images/producto-4.jpg">
-
-                                Ver detalles
-
-                            </button>
-
-                        </div>
-
-                    </div>
-
-                </article>
-
-
-                <!-- Producto 5 -->
-
-                <article class="col-12 col-md-6 col-lg-4">
-
-                    <div class="card h-100 product-card">
-
-                        <img
-                            src="./images/producto-5.jpg"
-                            class="card-img-top product-image"
-                            alt="Crema facial">
-
-                        <div class="card-body text-center">
-
-                            <h2 class="card-title h5">
-                                Crema Facial
-                            </h2>
-
-                            <p class="card-text">
-                                Crema hidratante para complementar
-                                tu rutina diaria.
-                            </p>
-
-                            <p class="fw-bold">
-                                $28.00
-                            </p>
-
-                            <button
-                                class="btn btn-dark btn-detalles"
-                                data-nombre="Crema Facial"
-                                data-precio="$28.00"
-                                data-descripcion="Crema hidratante diseñada para complementar una rutina diaria de cuidado facial."
-                                data-imagen="./images/producto-5.jpg">
-
-                                Ver detalles
-
-                            </button>
-
-                        </div>
-
-                    </div>
-
-                </article>
-
-
-                <!-- Producto 6 -->
-
-                <article class="col-12 col-md-6 col-lg-4">
-
-                    <div class="card h-100 product-card">
-
-                        <img
-                            src="./images/producto-6.jpg"
-                            class="card-img-top product-image"
-                            alt="Paleta de sombras">
-
-                        <div class="card-body text-center">
-
-                            <h2 class="card-title h5">
-                                Paleta de Sombras
-                            </h2>
-
-                            <p class="card-text">
-                                Tonos versátiles para crear
-                                diferentes estilos de maquillaje.
-                            </p>
-
-                            <p class="fw-bold">
-                                $32.00
-                            </p>
-
-                            <button
-                                class="btn btn-dark btn-detalles"
-                                data-nombre="Paleta de Sombras"
-                                data-precio="$32.00"
-                                data-descripcion="Paleta con tonos versátiles para crear diferentes estilos de maquillaje."
-                                data-imagen="./images/producto-6.jpg">
-
-                                Ver detalles
-
-                            </button>
-
-                        </div>
-
-                    </div>
-
-                </article>
+                </div>
 
             </div>
 
-        </section>
+        </article>
 
-    </main>
+
+
+        <!-- ====================================
+             PRODUCTO 2 - BLUSH
+        ===================================== -->
+
+        <article class="col-12 col-md-6 col-lg-4">
+
+            <div class="card h-100 product-card">
+
+                <img
+                    src="./images/producto-2.jpg"
+                    class="card-img-top product-image"
+                    alt="Blush">
+
+                <div class="card-body text-center">
+
+                    <h2 class="card-title h5">
+                        Blush
+                    </h2>
+
+                    <p class="card-text">
+                        Rubor suave para brindar un acabado
+                        natural y radiante.
+                    </p>
+
+                    <p class="fw-bold">
+                        $18.00
+                    </p>
+
+                    <div class="d-grid gap-2">
+
+                        <!-- Botón de detalles -->
+
+                        <button
+                            class="btn btn-dark btn-detalles"
+                            data-nombre="Blush"
+                            data-precio="$18.00"
+                            data-descripcion="Rubor suave para brindar un acabado natural y radiante."
+                            data-imagen="./images/producto-2.jpg">
+
+                            Ver detalles
+
+                        </button>
+
+
+                        <!-- Botón de carrito -->
+
+                        <button
+                            class="btn btn-outline-dark btn-carrito"
+                            data-id="2"
+                            data-nombre="Blush"
+                            data-precio="18"
+                            data-imagen="./images/producto-2.jpg">
+
+                            Añadir al carrito
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- ====================================
+             PRODUCTO 3 - SÉRUM FACIAL
+        ===================================== -->
+
+        <article class="col-12 col-md-6 col-lg-4">
+
+            <div class="card h-100 product-card">
+
+                <img
+                    src="./images/producto-3.jpg"
+                    class="card-img-top product-image"
+                    alt="Sérum Facial">
+
+                <div class="card-body text-center">
+
+                    <h2 class="card-title h5">
+                        Sérum Facial
+                    </h2>
+
+                    <p class="card-text">
+                        Sérum hidratante para complementar
+                        tu rutina de cuidado facial.
+                    </p>
+
+                    <p class="fw-bold">
+                        $25.00
+                    </p>
+
+                    <div class="d-grid gap-2">
+
+                        <!-- Botón de detalles -->
+
+                        <button
+                            class="btn btn-dark btn-detalles"
+                            data-nombre="Sérum Facial"
+                            data-precio="$25.00"
+                            data-descripcion="Sérum hidratante para complementar tu rutina de cuidado facial."
+                            data-imagen="./images/producto-3.jpg">
+
+                            Ver detalles
+
+                        </button>
+
+
+                        <!-- Botón de carrito -->
+
+                        <button
+                            class="btn btn-outline-dark btn-carrito"
+                            data-id="3"
+                            data-nombre="Sérum Facial"
+                            data-precio="25"
+                            data-imagen="./images/producto-3.jpg">
+
+                            Añadir al carrito
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- ====================================
+             PRODUCTO 4 - MÁSCARA DE PESTAÑAS
+        ===================================== -->
+
+        <article class="col-12 col-md-6 col-lg-4">
+
+            <div class="card h-100 product-card">
+
+                <img
+                    src="./images/producto-4.jpg"
+                    class="card-img-top product-image"
+                    alt="Máscara de Pestañas">
+
+                <div class="card-body text-center">
+
+                    <h2 class="card-title h5">
+                        Máscara de Pestañas
+                    </h2>
+
+                    <p class="card-text">
+                        Máscara diseñada para aportar
+                        definición y volumen a las pestañas.
+                    </p>
+
+                    <p class="fw-bold">
+                        $20.00
+                    </p>
+
+                    <div class="d-grid gap-2">
+
+                        <!-- Botón de detalles -->
+
+                        <button
+                            class="btn btn-dark btn-detalles"
+                            data-nombre="Máscara de Pestañas"
+                            data-precio="$20.00"
+                            data-descripcion="Máscara diseñada para aportar definición y volumen a las pestañas."
+                            data-imagen="./images/producto-4.jpg">
+
+                            Ver detalles
+
+                        </button>
+
+
+                        <!-- Botón de carrito -->
+
+                        <button
+                            class="btn btn-outline-dark btn-carrito"
+                            data-id="4"
+                            data-nombre="Máscara de Pestañas"
+                            data-precio="20"
+                            data-imagen="./images/producto-4.jpg">
+
+                            Añadir al carrito
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- ====================================
+             PRODUCTO 5 - CREMA FACIAL
+        ===================================== -->
+
+        <article class="col-12 col-md-6 col-lg-4">
+
+            <div class="card h-100 product-card">
+
+                <img
+                    src="./images/producto-5.jpg"
+                    class="card-img-top product-image"
+                    alt="Crema Facial">
+
+                <div class="card-body text-center">
+
+                    <h2 class="card-title h5">
+                        Crema Facial
+                    </h2>
+
+                    <p class="card-text">
+                        Crema hidratante para complementar
+                        tu rutina diaria.
+                    </p>
+
+                    <p class="fw-bold">
+                        $28.00
+                    </p>
+
+                    <div class="d-grid gap-2">
+
+                        <!-- Botón de detalles -->
+
+                        <button
+                            class="btn btn-dark btn-detalles"
+                            data-nombre="Crema Facial"
+                            data-precio="$28.00"
+                            data-descripcion="Crema hidratante diseñada para complementar una rutina diaria de cuidado facial."
+                            data-imagen="./images/producto-5.jpg">
+
+                            Ver detalles
+
+                        </button>
+
+
+                        <!-- Botón de carrito -->
+
+                        <button
+                            class="btn btn-outline-dark btn-carrito"
+                            data-id="5"
+                            data-nombre="Crema Facial"
+                            data-precio="28"
+                            data-imagen="./images/producto-5.jpg">
+
+                            Añadir al carrito
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- ====================================
+             PRODUCTO 6 - PALETA DE SOMBRAS
+        ===================================== -->
+
+        <article class="col-12 col-md-6 col-lg-4">
+
+            <div class="card h-100 product-card">
+
+                <img
+                    src="./images/producto-6.jpg"
+                    class="card-img-top product-image"
+                    alt="Paleta de Sombras">
+
+                <div class="card-body text-center">
+
+                    <h2 class="card-title h5">
+                        Paleta de Sombras
+                    </h2>
+
+                    <p class="card-text">
+                        Tonos versátiles para crear
+                        diferentes estilos de maquillaje.
+                    </p>
+
+                    <p class="fw-bold">
+                        $32.00
+                    </p>
+
+                    <div class="d-grid gap-2">
+
+                        <!-- Botón de detalles -->
+
+                        <button
+                            class="btn btn-dark btn-detalles"
+                            data-nombre="Paleta de Sombras"
+                            data-precio="$32.00"
+                            data-descripcion="Paleta con tonos versátiles para crear diferentes estilos de maquillaje."
+                            data-imagen="./images/producto-6.jpg">
+
+                            Ver detalles
+
+                        </button>
+
+
+                        <!-- Botón de carrito -->
+
+                        <button
+                            class="btn btn-outline-dark btn-carrito"
+                            data-id="6"
+                            data-nombre="Paleta de Sombras"
+                            data-precio="32"
+                            data-imagen="./images/producto-6.jpg">
+
+                            Añadir al carrito
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+    </div>
+
+</section>
 
 
     <!-- ========================================

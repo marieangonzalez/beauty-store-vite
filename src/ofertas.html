@@ -137,157 +137,233 @@
 
 
         <!-- ====================================
-             PRODUCTOS EN OFERTA
-        ===================================== -->
+     PRODUCTOS EN OFERTA
+===================================== -->
 
-        <section class="container py-5">
+<section class="container py-5">
 
-            <div class="row g-4">
+    <h2 class="text-center mb-4">
+        Ofertas especiales
+    </h2>
 
-
-                <!-- Oferta 1 -->
-
-                <article class="col-12 col-md-6 col-lg-4">
-
-                    <div class="card h-100 product-card">
-
-                        <img
-                            src="./images/producto-1.jpg"
-                            class="card-img-top product-image"
-                            alt="Lip Gloss en oferta">
-
-                        <div class="card-body text-center">
-
-                            <span class="badge bg-danger mb-2">
-                                Oferta
-                            </span>
-
-                            <h2 class="card-title h5">
-                                Lip Gloss
-                            </h2>
-
-                            <p class="text-muted text-decoration-line-through">
-                                $15.00
-                            </p>
-
-                            <p class="fw-bold fs-5">
-                                $12.00
-                            </p>
-
-                            <button
-                                class="btn btn-dark btn-detalles"
-                                data-nombre="Lip Gloss"
-                                data-precio="$12.00"
-                                data-descripcion="Lip Gloss en oferta especial por tiempo limitado."
-                                data-imagen="./images/producto-1.jpg">
-
-                                Ver detalles
-
-                            </button>
-
-                        </div>
-
-                    </div>
-
-                </article>
+    <div class="row g-4">
 
 
-                <!-- Oferta 2 -->
+        <!-- OFERTA 1 -->
 
-                <article class="col-12 col-md-6 col-lg-4">
+        <article class="col-12 col-md-6 col-lg-4">
 
-                    <div class="card h-100 product-card">
+            <div class="card h-100 product-card">
 
-                        <img
-                            src="./images/producto-4.jpg"
-                            class="card-img-top product-image"
-                            alt="Máscara de pestañas en oferta">
+                <span
+                    class="badge bg-danger position-absolute m-3"
+                    style="z-index: 2;">
 
-                        <div class="card-body text-center">
+                    Oferta
 
-                            <span class="badge bg-danger mb-2">
-                                Oferta
-                            </span>
+                </span>
 
-                            <h2 class="card-title h5">
-                                Máscara de Pestañas
-                            </h2>
+                <img
+                    src="./images/producto-1.jpg"
+                    class="card-img-top product-image"
+                    alt="Lip Gloss">
 
-                            <p class="text-muted text-decoration-line-through">
-                                $20.00
-                            </p>
+                <div class="card-body text-center d-flex flex-column">
 
-                            <p class="fw-bold fs-5">
-                                $16.00
-                            </p>
+                    <h2 class="card-title h5">
+                        Lip Gloss
+                    </h2>
 
-                            <button
-                                class="btn btn-dark btn-detalles"
-                                data-nombre="Máscara de Pestañas"
-                                data-precio="$16.00"
-                                data-descripcion="Máscara de pestañas con precio especial."
-                                data-imagen="./images/producto-4.jpg">
+                    <p class="card-text">
+                        Brillo labial con acabado luminoso
+                        a un precio especial.
+                    </p>
 
-                                Ver detalles
+                    <p class="mb-1">
+                        <del class="text-muted">
+                            $15.00
+                        </del>
+                    </p>
 
-                            </button>
+                    <p class="fw-bold fs-5">
+                        $12.00
+                    </p>
 
-                        </div>
+                    <div class="d-grid gap-2 mt-auto">
+
+                        <button
+                            class="btn btn-dark btn-detalles"
+                            data-nombre="Lip Gloss - Oferta"
+                            data-precio="$12.00"
+                            data-descripcion="Brillo labial de larga duración con acabado luminoso disponible a precio especial.">
+
+                            Ver detalles
+
+                        </button>
+
+                        <button
+                            class="btn btn-outline-dark btn-carrito"
+                            data-id="oferta-1"
+                            data-nombre="Lip Gloss - Oferta"
+                            data-precio="12">
+
+                            Añadir al carrito
+
+                        </button>
 
                     </div>
 
-                </article>
-
-
-                <!-- Oferta 3 -->
-
-                <article class="col-12 col-md-6 col-lg-4">
-
-                    <div class="card h-100 product-card">
-
-                        <img
-                            src="./images/producto-6.jpg"
-                            class="card-img-top product-image"
-                            alt="Paleta de sombras en oferta">
-
-                        <div class="card-body text-center">
-
-                            <span class="badge bg-danger mb-2">
-                                Oferta
-                            </span>
-
-                            <h2 class="card-title h5">
-                                Paleta de Sombras
-                            </h2>
-
-                            <p class="text-muted text-decoration-line-through">
-                                $32.00
-                            </p>
-
-                            <p class="fw-bold fs-5">
-                                $25.00
-                            </p>
-
-                            <button
-                                class="btn btn-dark btn-detalles"
-                                data-nombre="Paleta de Sombras"
-                                data-precio="$25.00"
-                                data-descripcion="Paleta de sombras disponible con descuento especial."
-                                data-imagen="./images/producto-6.jpg">
-
-                                Ver detalles
-
-                            </button>
-
-                        </div>
-
-                    </div>
-
-                </article>
+                </div>
 
             </div>
 
-        </section>
+        </article>
+
+
+        <!-- OFERTA 2 -->
+
+        <article class="col-12 col-md-6 col-lg-4">
+
+            <div class="card h-100 product-card">
+
+                <span
+                    class="badge bg-danger position-absolute m-3"
+                    style="z-index: 2;">
+
+                    Oferta
+
+                </span>
+
+                <img
+                    src="./images/producto-4.jpg"
+                    class="card-img-top product-image"
+                    alt="Máscara de Pestañas">
+
+                <div class="card-body text-center d-flex flex-column">
+
+                    <h2 class="card-title h5">
+                        Máscara de Pestañas
+                    </h2>
+
+                    <p class="card-text">
+                        Definición y volumen para tus pestañas
+                        a precio especial.
+                    </p>
+
+                    <p class="mb-1">
+                        <del class="text-muted">
+                            $20.00
+                        </del>
+                    </p>
+
+                    <p class="fw-bold fs-5">
+                        $16.00
+                    </p>
+
+                    <div class="d-grid gap-2 mt-auto">
+
+                        <button
+                            class="btn btn-dark btn-detalles"
+                            data-nombre="Máscara de Pestañas - Oferta"
+                            data-precio="$16.00"
+                            data-descripcion="Máscara diseñada para aportar definición y volumen a las pestañas, disponible a precio especial.">
+
+                            Ver detalles
+
+                        </button>
+
+                        <button
+                            class="btn btn-outline-dark btn-carrito"
+                            data-id="oferta-4"
+                            data-nombre="Máscara de Pestañas - Oferta"
+                            data-precio="16">
+
+                            Añadir al carrito
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- OFERTA 3 -->
+
+        <article class="col-12 col-md-6 col-lg-4">
+
+            <div class="card h-100 product-card">
+
+                <span
+                    class="badge bg-danger position-absolute m-3"
+                    style="z-index: 2;">
+
+                    Oferta
+
+                </span>
+
+                <img
+                    src="./images/producto-6.jpg"
+                    class="card-img-top product-image"
+                    alt="Paleta de Sombras">
+
+                <div class="card-body text-center d-flex flex-column">
+
+                    <h2 class="card-title h5">
+                        Paleta de Sombras
+                    </h2>
+
+                    <p class="card-text">
+                        Tonos versátiles para crear diferentes
+                        estilos de maquillaje.
+                    </p>
+
+                    <p class="mb-1">
+                        <del class="text-muted">
+                            $32.00
+                        </del>
+                    </p>
+
+                    <p class="fw-bold fs-5">
+                        $26.00
+                    </p>
+
+                    <div class="d-grid gap-2 mt-auto">
+
+                        <button
+                            class="btn btn-dark btn-detalles"
+                            data-nombre="Paleta de Sombras - Oferta"
+                            data-precio="$26.00"
+                            data-descripcion="Paleta con tonos versátiles para crear diferentes estilos de maquillaje, disponible a precio especial.">
+
+                            Ver detalles
+
+                        </button>
+
+                        <button
+                            class="btn btn-outline-dark btn-carrito"
+                            data-id="oferta-6"
+                            data-nombre="Paleta de Sombras - Oferta"
+                            data-precio="26">
+
+                            Añadir al carrito
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
 
 
         <!-- ====================================

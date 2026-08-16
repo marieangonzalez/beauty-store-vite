@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Finaliza tu compra en Beauty Store.">
+
+    <title>Beauty Store | Pago</title>
+
+    <script
+        type="module"
+        src="./js/main.js">
+    </script>
+</head>
+
+<body>
+
+    <!-- ========================================
+         HEADER
+    ========================================= -->
+
+    <header>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+            <div class="container">
+
+                <a
+                    class="navbar-brand fw-bold"
+                    href="index.html">
+
+                    Beauty Store
+
+                </a>
+
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#menuPrincipal"
+                    aria-controls="menuPrincipal"
+                    aria-expanded="false"
+                    aria-label="Abrir menú">
+
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+
+
+                <div
+                    class="collapse navbar-collapse"
+                    id="menuPrincipal">
+
+                    <ul class="navbar-nav ms-auto">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">
+                                Inicio
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="productos.html">
+                                Productos
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="categorias.html">
+                                Categorías
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="ofertas.html">
+                                Ofertas
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="favoritos.html">
+                                Favoritos
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" href="carrito.html">
+                                Carrito
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="nosotros.html">
+                                Nosotros
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">
+                                Contacto
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- ========================================
+         CONTENIDO PRINCIPAL
+    ========================================= -->
+
+    <main>
+
+        <!-- ENCABEZADO -->
+
+        <section class="bg-light py-5 text-center">
+
+            <div class="container">
+
+                <h1>
+                    Finalizar compra
+                </h1>
+
+                <p class="lead mb-0">
+                    Completa la información para procesar tu pedido.
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ====================================
+             CHECKOUT
+        ===================================== -->
+
+        <section class="container py-5">
+
+            <div class="row g-5">
+
+
+                <!-- ====================================
+                     FORMULARIO
+                ===================================== -->
+
+                <div class="col-12 col-lg-7">
+
+                    <h2 class="h4 mb-4">
+                        Información de pago
+                    </h2>
+
+
+                    <div
+                        class="alert alert-warning"
+                        role="alert">
+
+                        Este checkout es una demostración académica.
+                        No introduzcas información bancaria real.
+
+                    </div>
+
+
+                    <form
+                        id="formPago"
+                        novalidate>
+
+
+                        <!-- NOMBRE -->
+
+                        <div class="mb-3">
+
+                            <label
+                                for="nombrePago"
+                                class="form-label">
+
+                                Nombre completo
+
+                            </label>
+
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="nombrePago"
+                                minlength="3"
+                                required>
+
+                            <div class="invalid-feedback">
+                                Escribe tu nombre completo.
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- EMAIL -->
+
+                        <div class="mb-3">
+
+                            <label
+                                for="emailPago"
+                                class="form-label">
+
+                                Correo electrónico
+
+                            </label>
+
+                            <input
+                                type="email"
+                                class="form-control"
+                                id="emailPago"
+                                required>
+
+                            <div class="invalid-feedback">
+                                Escribe un correo electrónico válido.
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- DIRECCIÓN -->
+
+                        <div class="mb-3">
+
+                            <label
+                                for="direccionPago"
+                                class="form-label">
+
+                                Dirección
+
+                            </label>
+
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="direccionPago"
+                                minlength="5"
+                                required>
+
+                            <div class="invalid-feedback">
+                                Escribe una dirección válida.
+                            </div>
+
+                        </div>
+
+
+                        <div class="row">
+
+                            <!-- CIUDAD -->
+
+                            <div class="col-md-6 mb-3">
+
+                                <label
+                                    for="ciudadPago"
+                                    class="form-label">
+
+                                    Ciudad
+
+                                </label>
+
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="ciudadPago"
+                                    required>
+
+                                <div class="invalid-feedback">
+                                    Escribe tu ciudad.
+                                </div>
+
+                            </div>
+
+
+                            <!-- CÓDIGO POSTAL -->
+
+                            <div class="col-md-6 mb-3">
+
+                                <label
+                                    for="zipPago"
+                                    class="form-label">
+
+                                    Código postal
+
+                                </label>
+
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="zipPago"
+                                    minlength="5"
+                                    maxlength="10"
+                                    required>
+
+                                <div class="invalid-feedback">
+                                    Escribe un código postal válido.
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- ====================================
+                             MÉTODO DE PAGO
+                        ===================================== -->
+
+                        <h3 class="h5 mt-4 mb-3">
+                            Método de pago
+                        </h3>
+
+
+                        <div class="mb-3">
+
+                            <div class="form-check mb-2">
+
+                                <input
+                                    class="form-check-input"
+                                    type="radio"
+                                    name="metodoPago"
+                                    id="pagoTarjeta"
+                                    value="Tarjeta"
+                                    checked>
+
+                                <label
+                                    class="form-check-label"
+                                    for="pagoTarjeta">
+
+                                    Tarjeta de crédito o débito
+
+                                </label>
+
+                            </div>
+
+
+                            <div class="form-check mb-2">
+
+                                <input
+                                    class="form-check-input"
+                                    type="radio"
+                                    name="metodoPago"
+                                    id="pagoPaypal"
+                                    value="PayPal">
+
+                                <label
+                                    class="form-check-label"
+                                    for="pagoPaypal">
+
+                                    PayPal
+
+                                </label>
+
+                            </div>
+
+
+                            <div class="form-check">
+
+                                <input
+                                    class="form-check-input"
+                                    type="radio"
+                                    name="metodoPago"
+                                    id="pagoAth"
+                                    value="ATH Móvil">
+
+                                <label
+                                    class="form-check-label"
+                                    for="pagoAth">
+
+                                    ATH Móvil
+
+                                </label>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- ====================================
+                             DATOS DE TARJETA
+                        ===================================== -->
+
+                        <div id="datosTarjeta">
+
+                            <div class="mb-3">
+
+                                <label
+                                    for="numeroTarjeta"
+                                    class="form-label">
+
+                                    Número de tarjeta
+
+                                </label>
+
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="numeroTarjeta"
+                                    placeholder="0000 0000 0000 0000"
+                                    maxlength="19"
+                                    required>
+
+                                <div class="invalid-feedback">
+                                    Escribe un número de tarjeta de demostración.
+                                </div>
+
+                            </div>
+
+
+                            <div class="row">
+
+                                <div class="col-md-6 mb-3">
+
+                                    <label
+                                        for="fechaTarjeta"
+                                        class="form-label">
+
+                                        Fecha de expiración
+
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="fechaTarjeta"
+                                        placeholder="MM/AA"
+                                        maxlength="5"
+                                        required>
+
+                                    <div class="invalid-feedback">
+                                        Escribe una fecha válida.
+                                    </div>
+
+                                </div>
+
+
+                                <div class="col-md-6 mb-3">
+
+                                    <label
+                                        for="cvvTarjeta"
+                                        class="form-label">
+
+                                        CVV
+
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="cvvTarjeta"
+                                        placeholder="123"
+                                        maxlength="4"
+                                        required>
+
+                                    <div class="invalid-feedback">
+                                        Escribe el CVV.
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- BOTÓN -->
+
+                        <button
+                            type="submit"
+                            class="btn btn-dark w-100 mt-3">
+
+                            Completar compra
+
+                        </button>
+
+                    </form>
+
+
+
+                    <!-- ====================================
+                         MENSAJE DE ÉXITO
+                    ===================================== -->
+
+                    <div
+                        id="mensajePagoExito"
+                        class="alert alert-success mt-4 d-none"
+                        role="alert">
+
+                        <h2 class="h5">
+                            ¡Compra completada!
+                        </h2>
+
+                        <p class="mb-0">
+                            Tu pedido fue procesado correctamente
+                            como parte de esta demostración.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ====================================
+                     RESUMEN
+                ===================================== -->
+
+                <aside class="col-12 col-lg-5">
+
+                    <div class="card shadow-sm">
+
+                        <div class="card-body p-4">
+
+                            <h2 class="h4 mb-4">
+                                Resumen de compra
+                            </h2>
+
+
+                            <div
+                                id="resumenProductosPago">
+                            </div>
+
+
+                            <hr>
+
+
+                            <div
+                                class="d-flex justify-content-between mb-2">
+
+                                <span>
+                                    Productos
+                                </span>
+
+                                <span id="cantidadPago">
+                                    0
+                                </span>
+
+                            </div>
+
+
+                            <div
+                                class="d-flex justify-content-between mb-2">
+
+                                <span>
+                                    Subtotal
+                                </span>
+
+                                <span id="subtotalPago">
+                                    $0.00
+                                </span>
+
+                            </div>
+
+
+                            <div
+                                class="d-flex justify-content-between mb-2">
+
+                                <span>
+                                    Envío
+                                </span>
+
+                                <span class="text-success">
+                                    Gratis
+                                </span>
+
+                            </div>
+
+
+                            <hr>
+
+
+                            <div
+                                class="d-flex justify-content-between fw-bold fs-5">
+
+                                <span>
+                                    Total
+                                </span>
+
+                                <span id="totalPago">
+                                    $0.00
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="text-center mt-3">
+
+                        <a
+                            href="carrito.html"
+                            class="btn btn-outline-dark">
+
+                            Volver al carrito
+
+                        </a>
+
+                    </div>
+
+                </aside>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- ========================================
+         FOOTER
+    ========================================= -->
+
+    <footer class="bg-dark text-white text-center py-4">
+
+        <div class="container">
+
+            <p class="mb-1">
+                &copy; 2026 Beauty Store. Todos los derechos reservados.
+            </p>
+
+            <p class="mb-2">
+                Belleza, cuidado y estilo en un solo lugar.
+            </p>
+
+            <p class="mb-2">
+
+                <a
+                    href="preguntas.html"
+                    class="text-white text-decoration-none">
+
+                    Preguntas frecuentes
+
+                </a>
+
+                <span class="mx-2">|</span>
+
+                <a
+                    href="politicas.html"
+                    class="text-white text-decoration-none">
+
+                    Políticas
+
+                </a>
+
+            </p>
+
+            <p class="mb-0">
+                Proyecto académico desarrollado con
+                HTML5, CSS, Bootstrap, JavaScript y Vite.
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

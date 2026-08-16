@@ -325,147 +325,191 @@
 
 
         <!-- ====================================
-             PRODUCTOS DESTACADOS
-        ===================================== -->
+     PRODUCTOS DESTACADOS
+===================================== -->
 
-       <section class="container pt-5 pb-5">
+<section class="container pt-5 pb-5">
 
-            <h2 class="text-center mb-4">
-                Productos destacados
-            </h2>
+    <h2 class="text-center mb-4">
+        Productos destacados
+    </h2>
 
-            <div class="row g-4">
-
-                <!-- Producto 1 -->
-
-                <article class="col-12 col-md-6 col-lg-4">
-
-                    <div class="card h-100 product-card">
-
-    <img
-        src="./images/producto-1.jpg"
-        class="card-img-top product-image"
-        alt="Lip Gloss">
-
-    <div class="card-body text-center">
-                        
-                            <h3 class="card-title h5">
-                                Lip Gloss
-                            </h3>
-
-                            <p class="card-text">
-                                Brillo labial de larga duración
-                                con acabado luminoso.
-                            </p>
-
-                            <p class="fw-bold">
-                                $15.00
-                            </p>
-
-                            <button
-    class="btn btn-dark btn-detalles"
-    data-nombre="Lip Gloss"
-    data-precio="$15.00"
-    data-descripcion="Brillo labial de larga duración con acabado luminoso."
-    data-imagen="./images/producto-1.jpg">
-    Ver detalles
-</button>
-
-                        </div>
-
-                    </div>
-
-                </article>
+    <div class="row g-4">
 
 
-                <!-- Producto 2 -->
+        <!-- PRODUCTO 1 -->
 
-                <!-- Producto 2 -->
+        <article class="col-12 col-md-6 col-lg-4">
 
-<article class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 product-card">
 
-    <div class="card h-100 product-card">
+                <img
+                    src="./images/producto-1.jpg"
+                    class="card-img-top product-image"
+                    alt="Lip Gloss">
 
-        <img
-            src="./images/producto-2.jpg"
-            class="card-img-top product-image"
-            alt="Blush">
+                <div class="card-body text-center d-flex flex-column">
 
-        <div class="card-body text-center">
+                    <h3 class="card-title h5">
+                        Lip Gloss
+                    </h3>
 
-            <h3 class="card-title h5">
-                Blush
-            </h3>
+                    <p class="card-text">
+                        Brillo labial de larga duración
+                        con acabado luminoso.
+                    </p>
 
-            <p class="card-text">
-                Rubor suave para brindar un acabado
-                natural y radiante.
-            </p>
+                    <p class="fw-bold">
+                        $15.00
+                    </p>
 
-            <p class="fw-bold">
-                $18.00
-            </p>
+                    <div class="d-grid gap-2 mt-auto">
 
-            <button
-    class="btn btn-dark btn-detalles"
-    data-nombre="Blush"
-    data-precio="$18.00"
-    data-descripcion="Rubor suave para brindar un acabado natural y radiante."
-    data-imagen="./images/producto-2.jpg">
-    Ver detalles
-</button>
+                        <button
+                            class="btn btn-dark btn-detalles"
+                            data-nombre="Lip Gloss"
+                            data-precio="$15.00"
+                            data-descripcion="Brillo labial de larga duración con acabado luminoso.">
 
-        </div>
+                            Ver detalles
 
-    </div>
+                        </button>
 
-</article>
+                        <button
+                            class="btn btn-outline-dark btn-carrito"
+                            data-id="1"
+                            data-nombre="Lip Gloss"
+                            data-precio="15">
 
+                            Añadir al carrito
 
-                <!-- Producto 3 -->
-
-                <article class="col-12 col-md-6 col-lg-4">
-
-                    <div class="card h-100 product-card">
-
-    <img
-        src="./images/producto-3.jpg"
-        class="card-img-top product-image"
-        alt="Sérum facial">
-
-    <div class="card-body text-center">
-
-                            <h3 class="card-title h5">
-                                Sérum Facial
-                            </h3>
-
-                            <p class="card-text">
-                                Sérum hidratante para complementar
-                                tu rutina de cuidado facial.
-                            </p>
-
-                            <p class="fw-bold">
-                                $25.00
-                            </p>
-
-                            <button
-    class="btn btn-dark btn-detalles"
-    data-nombre="Sérum Facial"
-    data-precio="$25.00"
-    data-descripcion="Sérum hidratante para complementar tu rutina de cuidado facial."
-    data-imagen="./images/producto-3.jpg">
-    Ver detalles
-</button>
-
-                        </div>
+                        </button>
 
                     </div>
 
-                </article>
+                </div>
 
             </div>
 
-        </section>
+        </article>
+
+
+        <!-- PRODUCTO 2 -->
+
+        <article class="col-12 col-md-6 col-lg-4">
+
+            <div class="card h-100 product-card">
+
+                <img
+                    src="./images/producto-2.jpg"
+                    class="card-img-top product-image"
+                    alt="Blush">
+
+                <div class="card-body text-center d-flex flex-column">
+
+                    <h3 class="card-title h5">
+                        Blush
+                    </h3>
+
+                    <p class="card-text">
+                        Rubor suave para brindar un acabado
+                        natural y radiante.
+                    </p>
+
+                    <p class="fw-bold">
+                        $18.00
+                    </p>
+
+                    <div class="d-grid gap-2 mt-auto">
+
+                        <button
+                            class="btn btn-dark btn-detalles"
+                            data-nombre="Blush"
+                            data-precio="$18.00"
+                            data-descripcion="Rubor suave para brindar un acabado natural y radiante.">
+
+                            Ver detalles
+
+                        </button>
+
+                        <button
+                            class="btn btn-outline-dark btn-carrito"
+                            data-id="2"
+                            data-nombre="Blush"
+                            data-precio="18">
+
+                            Añadir al carrito
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- PRODUCTO 3 -->
+
+        <article class="col-12 col-md-6 col-lg-4">
+
+            <div class="card h-100 product-card">
+
+                <img
+                    src="./images/producto-3.jpg"
+                    class="card-img-top product-image"
+                    alt="Sérum Facial">
+
+                <div class="card-body text-center d-flex flex-column">
+
+                    <h3 class="card-title h5">
+                        Sérum Facial
+                    </h3>
+
+                    <p class="card-text">
+                        Sérum hidratante para complementar
+                        tu rutina de cuidado facial.
+                    </p>
+
+                    <p class="fw-bold">
+                        $25.00
+                    </p>
+
+                    <div class="d-grid gap-2 mt-auto">
+
+                        <button
+                            class="btn btn-dark btn-detalles"
+                            data-nombre="Sérum Facial"
+                            data-precio="$25.00"
+                            data-descripcion="Sérum hidratante para complementar tu rutina de cuidado facial.">
+
+                            Ver detalles
+
+                        </button>
+
+                        <button
+                            class="btn btn-outline-dark btn-carrito"
+                            data-id="3"
+                            data-nombre="Sérum Facial"
+                            data-precio="25">
+
+                            Añadir al carrito
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
 
 
         <!-- ====================================
