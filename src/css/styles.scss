@@ -1,4 +1,11 @@
 /* ==========================================
+   GOOGLE FONTS
+========================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* ==========================================
    BOOTSTRAP
 ========================================== */
 
@@ -6,22 +13,183 @@
 
 
 /* ==========================================
+   VARIABLES DE DISEÑO
+========================================== */
+
+$color-ciruela: #5a3b4d;
+$color-ciruela-oscuro: #452f3c;
+$color-rosa: #d990bc;
+$color-rosa-claro: #f7dbea;
+$color-durazno: #f3b786;
+$color-crema: #fff8f5;
+$color-texto: #30282d;
+$color-blanco: #ffffff;
+
+
+/* ==========================================
    ESTILOS GENERALES
 ========================================== */
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #ffffff;
-    color: #212529;
+    min-height: 100vh;
+
+    font-family: "Montserrat", sans-serif;
+
+    color: $color-texto;
+
+    background-image:
+        linear-gradient(
+            rgba(255, 255, 255, 0.12),
+            rgba(255, 255, 255, 0.12)
+        ),
+        url("../images/blurry-gradient-haikei.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 
 /* ==========================================
-   NAVEGACIÓN
+   TIPOGRAFÍA
 ========================================== */
 
+/* Títulos principales */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
 .navbar-brand {
+    font-family: "Julius Sans One", sans-serif;
+
+    font-weight: 700 !important;
+
     letter-spacing: 1px;
+
+    -webkit-text-stroke: 0.25px currentColor;
+}
+
+
+/* Tamaños y separación */
+
+h1 {
+    letter-spacing: 2px;
+}
+
+h2 {
+    letter-spacing: 1.5px;
+}
+
+
+/* Texto general */
+
+p,
+a,
+button,
+input,
+textarea,
+label,
+li,
+span,
+td,
+th {
+    font-family: "Montserrat", sans-serif;
+}
+
+
+/* ==========================================
+   NAVBAR
+========================================== */
+
+.navbar,
+.navbar.bg-dark {
+    background-color: $color-ciruela !important;
+
+    box-shadow:
+        0 4px 14px rgba(0, 0, 0, 0.14);
+
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+
+.navbar-brand {
+    color: $color-blanco !important;
+
+    font-size: 1.4rem;
+
+    font-weight: 700 !important;
+
+    letter-spacing: 2px;
+}
+
+
+.navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.72) !important;
+
+    font-size: 0.9rem;
+
+    font-weight: 500;
+
+    transition:
+        color 0.25s ease,
+        transform 0.25s ease;
+}
+
+
+.navbar-nav .nav-link:hover {
+    color: $color-blanco !important;
+
+    transform: translateY(-1px);
+}
+
+
+.navbar-nav .nav-link.active {
+    color: $color-blanco !important;
+
+    font-weight: 700;
+}
+
+
+/* ==========================================
+   SECCIONES GENERALES
+========================================== */
+
+main {
+    min-height: 60vh;
+}
+
+
+.bg-light {
+    background-color: rgba(255, 248, 245, 0.90) !important;
+}
+
+
+section.container {
+    background-color: rgba(255, 255, 255, 0.87);
+
+    border-radius: 22px;
+
+    box-shadow:
+        0 10px 30px rgba(74, 48, 63, 0.08);
+
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+
+.descripcion-inicio {
+    max-width: 750px;
+
+    line-height: 1.8;
 }
 
 
@@ -29,47 +197,99 @@ body {
    CARRUSEL PRINCIPAL
 ========================================== */
 
+.carousel {
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+
 .hero-slide {
     min-height: 500px;
+
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
+
 .hero-1 {
     background-image:
         linear-gradient(
-            rgba(0, 0, 0, 0.45),
-            rgba(0, 0, 0, 0.45)
+            rgba(56, 34, 47, 0.46),
+            rgba(56, 34, 47, 0.46)
         ),
         url("../images/banner-1.jpg");
 }
 
+
 .hero-2 {
     background-image:
         linear-gradient(
-            rgba(0, 0, 0, 0.45),
-            rgba(0, 0, 0, 0.45)
+            rgba(56, 34, 47, 0.46),
+            rgba(56, 34, 47, 0.46)
         ),
         url("../images/banner-2.jpg");
 }
 
+
 .hero-3 {
     background-image:
         linear-gradient(
-            rgba(0, 0, 0, 0.45),
-            rgba(0, 0, 0, 0.45)
+            rgba(56, 34, 47, 0.46),
+            rgba(56, 34, 47, 0.46)
         ),
         url("../images/banner-3.jpg");
 }
 
 
+.hero-slide h1,
+.hero-slide h2 {
+    color: $color-blanco;
+
+    font-weight: 700 !important;
+
+    letter-spacing: 3px;
+
+    -webkit-text-stroke: 0.3px $color-blanco;
+
+    text-shadow:
+        0 3px 12px rgba(0, 0, 0, 0.40);
+}
+
+
+.hero-slide p {
+    text-shadow:
+        0 2px 8px rgba(0, 0, 0, 0.35);
+}
+
+
 /* ==========================================
-   PÁGINA DE INICIO
+   TARJETAS
 ========================================== */
 
-.descripcion-inicio {
-    max-width: 750px;
+.card {
+    background-color: rgba(255, 255, 255, 0.95);
+
+    border: 1px solid rgba(90, 59, 77, 0.09);
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 8px 24px rgba(74, 48, 63, 0.09);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+
+.card-title {
+    color: $color-ciruela-oscuro;
+
+    font-weight: 700 !important;
 }
 
 
@@ -77,10 +297,6 @@ body {
    PRODUCTOS
 ========================================== */
 
-.product-image {
-    height: 300px;
-    object-fit: cover;
-}
 .product-card {
     transition:
         transform 0.3s ease,
@@ -88,33 +304,498 @@ body {
 }
 
 
-/* Efecto visual al pasar el mouse */
-
 .product-card:hover {
-    transform: translateY(-8px);
+    transform: translateY(-9px);
+
+    border-color: rgba(217, 144, 188, 0.40);
 
     box-shadow:
-        0 10px 25px rgba(0, 0, 0, 0.15);
+        0 16px 35px rgba(74, 48, 63, 0.18);
 }
+
+
+.product-image {
+    width: 100%;
+
+    height: 300px;
+
+    object-fit: cover;
+
+    transition: transform 0.4s ease;
+}
+
+
+.product-card:hover .product-image {
+    transform: scale(1.025);
+}
+
+
+/* ==========================================
+   BOTONES GENERALES
+========================================== */
+
+.btn {
+    border-radius: 50px;
+
+    font-weight: 600;
+
+    padding-left: 22px;
+    padding-right: 22px;
+
+    transition:
+        transform 0.25s ease,
+        background-color 0.25s ease,
+        border-color 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+
+/* Botones oscuros */
+
+.btn-dark {
+    background-color: $color-ciruela !important;
+
+    border-color: $color-ciruela !important;
+
+    color: $color-blanco !important;
+}
+
+
+.btn-dark:hover {
+    background-color: $color-ciruela-oscuro !important;
+
+    border-color: $color-ciruela-oscuro !important;
+
+    box-shadow:
+        0 6px 16px rgba(69, 47, 60, 0.25);
+}
+
+
+/* Botón outline */
+
+.btn-outline-dark {
+    color: $color-ciruela !important;
+
+    border-color: $color-ciruela !important;
+}
+
+
+.btn-outline-dark:hover {
+    color: $color-blanco !important;
+
+    background-color: $color-ciruela !important;
+
+    border-color: $color-ciruela !important;
+}
+
+
+/* Botón claro del carrusel */
+
+.hero-slide .btn-light {
+    background-color: rgba(255, 255, 255, 0.92);
+
+    border: none;
+
+    color: $color-ciruela-oscuro;
+
+    font-weight: 600;
+}
+
+
+.hero-slide .btn-light:hover {
+    background-color: $color-blanco;
+
+    color: $color-ciruela;
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.18);
+}
+
+
+/* ==========================================
+   BADGES
+========================================== */
+
+.badge.bg-success {
+    background-color: $color-rosa !important;
+}
+
+
+.badge.bg-danger {
+    background-color: $color-ciruela !important;
+}
+
+
+/* ==========================================
+   FORMULARIO
+========================================== */
+
+.form-control {
+    border-radius: 12px;
+
+    border: 1px solid rgba(90, 59, 77, 0.20);
+
+    padding: 12px 14px;
+
+    background-color: rgba(255, 255, 255, 0.94);
+
+    transition:
+        border-color 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+.form-control:focus {
+    border-color: $color-rosa;
+
+    box-shadow:
+        0 0 0 0.2rem rgba(217, 144, 188, 0.20);
+}
+
+
+.form-label {
+    font-weight: 600;
+
+    color: $color-ciruela-oscuro;
+}
+
 
 /* ==========================================
    MODAL DE PRODUCTOS
 ========================================== */
 
-.modal-product-image {
-    width: 100%;
-    max-height: 350px;
-    object-fit: cover;
+.modal-content {
+    border: none;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.20);
 }
 
+
+.modal-header {
+    background-color: $color-crema;
+
+    border-bottom:
+        1px solid rgba(90, 59, 77, 0.10);
+}
+
+
+.modal-title {
+    font-family: "Julius Sans One", sans-serif;
+
+    font-weight: 700 !important;
+
+    -webkit-text-stroke: 0.25px currentColor;
+}
+
+
+.modal-footer {
+    background-color: $color-crema;
+
+    border-top:
+        1px solid rgba(90, 59, 77, 0.10);
+}
+
+
+.modal-product-image {
+    width: 100%;
+
+    max-height: 350px;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+}
+
+
 /* ==========================================
-   RESPONSIVE
+   ACORDEÓN DE PREGUNTAS
+========================================== */
+
+.accordion {
+    --bs-accordion-border-color:
+        rgba(90, 59, 77, 0.13);
+}
+
+
+.accordion-item {
+    border-radius: 12px !important;
+
+    overflow: hidden;
+
+    margin-bottom: 12px;
+
+    border:
+        1px solid rgba(90, 59, 77, 0.13);
+}
+
+
+.accordion-button {
+    font-family: "Montserrat", sans-serif;
+
+    font-weight: 700;
+
+    color: $color-ciruela-oscuro;
+
+    background-color: rgba(255, 255, 255, 0.94);
+}
+
+
+.accordion-button:not(.collapsed) {
+    color: $color-ciruela-oscuro;
+
+    background-color: $color-rosa-claro;
+
+    box-shadow: none;
+}
+
+
+.accordion-button:focus {
+    border-color: $color-rosa;
+
+    box-shadow:
+        0 0 0 0.2rem rgba(217, 144, 188, 0.18);
+}
+
+
+.accordion-body {
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+
+/* ==========================================
+   CARRITO / TABLAS
+========================================== */
+
+.table {
+    background-color: rgba(255, 255, 255, 0.92);
+
+    border-radius: 14px;
+
+    overflow: hidden;
+}
+
+
+.table-dark {
+    --bs-table-bg: #5a3b4d;
+    --bs-table-color: #ffffff;
+}
+
+
+.table td,
+.table th {
+    vertical-align: middle;
+}
+
+
+/* ==========================================
+   ASIDE
+========================================== */
+
+aside.bg-light {
+    background-color: rgba(255, 248, 245, 0.91) !important;
+
+    border-top:
+        1px solid rgba(90, 59, 77, 0.06);
+
+    border-bottom:
+        1px solid rgba(90, 59, 77, 0.06);
+}
+
+
+/* ==========================================
+   ALERTAS
+========================================== */
+
+.alert-success {
+    background-color: rgba(217, 144, 188, 0.15);
+
+    border-color: rgba(217, 144, 188, 0.30);
+
+    color: $color-ciruela-oscuro;
+
+    border-radius: 12px;
+}
+
+
+/* ==========================================
+   LINKS
+========================================== */
+
+a {
+    transition:
+        color 0.2s ease,
+        opacity 0.2s ease;
+}
+
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+footer,
+footer.bg-dark {
+    background-color: $color-ciruela !important;
+
+    color: $color-blanco;
+
+    box-shadow:
+        0 -4px 18px rgba(0, 0, 0, 0.10);
+}
+
+
+footer p {
+    font-size: 0.9rem;
+}
+
+
+footer a {
+    color: $color-blanco !important;
+
+    transition:
+        opacity 0.25s ease,
+        color 0.25s ease;
+}
+
+
+footer a:hover {
+    color: $color-rosa-claro !important;
+
+    opacity: 1;
+}
+
+
+/* ==========================================
+   SELECCIÓN DE TEXTO
+========================================== */
+
+::selection {
+    background-color: $color-rosa;
+
+    color: $color-blanco;
+}
+
+
+/* ==========================================
+   RESPONSIVE - TABLET
+========================================== */
+
+@media (max-width: 991px) {
+
+    .navbar-nav {
+        padding-top: 12px;
+    }
+
+
+    .navbar-nav .nav-link {
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+
+
+    .hero-slide {
+        min-height: 440px;
+    }
+
+}
+
+
+/* ==========================================
+   RESPONSIVE - CELULAR
 ========================================== */
 
 @media (max-width: 768px) {
 
+    body {
+        background-attachment: scroll;
+    }
+
+
     .hero-slide {
         min-height: 400px;
+
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+
+    .hero-slide h1,
+    .hero-slide h2 {
+        font-size: 2rem;
+
+        font-weight: 700 !important;
+
+        letter-spacing: 2px;
+    }
+
+
+    .hero-slide p {
+        font-size: 1rem;
+    }
+
+
+    section.container {
+        border-radius: 15px;
+
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+
+    .product-image {
+        height: 280px;
+    }
+
+
+    .btn {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+}
+
+
+/* ==========================================
+   RESPONSIVE - CELULARES PEQUEÑOS
+========================================== */
+
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: 1.8rem;
+
+        font-weight: 700 !important;
+    }
+
+
+    h2 {
+        font-size: 1.5rem;
+
+        font-weight: 700 !important;
+    }
+
+
+    .navbar-brand {
+        font-size: 1.15rem;
+    }
+
+
+    .hero-slide {
+        min-height: 360px;
+    }
+
+
+    .product-image {
+        height: 250px;
     }
 
 }
