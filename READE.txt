@@ -1,93 +1,376 @@
-# READE.txt — Beauty Store
+============================================================
+                    BEAUTY STORE
+                  PROYECTO FINAL
+============================================================
 
-## Descripción del proyecto
+Nombre del proyecto:
+Beauty Store
 
-Beauty Store es una tienda online ficticia desarrollada como proyecto final para 
-demostrar los conocimientos adquiridos durante el curso.
+Escenario seleccionado:
+Escenario 2 - Tienda Online
 
-El sitio presenta productos relacionados con maquillaje, belleza y cuidado
- personal mediante una interfaz organizada, responsiva y fácil de utilizar.
 
-## Escenario seleccionado
+============================================================
+DESCRIPCIÓN DEL PROYECTO
+============================================================
 
-Escenario 2: Tienda online.
+Beauty Store es una tienda online ficticia dedicada a la venta
+de productos de belleza, maquillaje y cuidado personal.
 
-## Objetivo
+El sitio web fue desarrollado como proyecto académico utilizando
+HTML5, CSS/Sass, Bootstrap 5, JavaScript y Vite.
 
-El objetivo del proyecto es desarrollar un sitio web funcional utilizando 
-HTML5, CSS, Bootstrap, JavaScript y Vite, aplicando una estructura semántica, 
-diseño responsivo, interactividad y buenas prácticas de desarrollo web.
+El proyecto cuenta con diferentes páginas interconectadas,
+diseño responsivo, navegación entre secciones, catálogo de
+productos, ofertas, favoritos, carrito de compras dinámico,
+formulario de contacto y un proceso de checkout simulado.
 
-## Tecnologías utilizadas
 
-* HTML5 para la estructura y organización semántica del contenido.
-* CSS y Sass para los estilos personalizados.
-* Bootstrap 5 para el diseño, componentes y adaptación responsiva.
-* JavaScript para la interacción y validación de elementos.
-* Vite para el desarrollo y compilación del proyecto.
-* Git y GitHub para el control de versiones y almacenamiento del proyecto.
-* GitHub Pages para la publicación del sitio web.
+============================================================
+OBJETIVO
+============================================================
 
-## Estructura del sitio
+El objetivo de este proyecto es aplicar los conocimientos
+adquiridos durante el curso de desarrollo web mediante la
+creación de un sitio web funcional, organizado, responsivo
+e interactivo.
 
-El proyecto contiene una página principal y diez páginas subordinadas:
+Se utilizaron elementos semánticos de HTML5, estilos
+personalizados, componentes de Bootstrap y funcionalidades
+desarrolladas con JavaScript.
 
-1. index.html — Página de inicio.
-2. productos.html — Catálogo de productos.
-3. categorias.html — Categorías de productos.
-4. ofertas.html — Productos en oferta.
-5. novedades.html — Productos nuevos.
-6. favoritos.html — Productos favoritos.
-7. carrito.html — Carrito de compras demostrativo.
-8. nosotros.html — Información sobre Beauty Store.
-9. contacto.html — Formulario de contacto.
-10. preguntas.html — Preguntas frecuentes.
-11. politicas.html — Políticas generales de la tienda.
 
-## Funcionalidades implementadas
+============================================================
+TECNOLOGÍAS UTILIZADAS
+============================================================
 
-La página incluye diferentes funciones e interacciones, entre ellas:
+- HTML5
+  Utilizado para crear la estructura y organización semántica
+  de las páginas.
 
-* Barra de navegación responsiva.
-* Carrusel de imágenes en la página de inicio.
-* Tarjetas de productos utilizando Bootstrap.
-* Efecto visual al pasar el mouse sobre los productos.
-* Ventanas modales para mostrar detalles de los productos al hacer clic.
-* Validación en tiempo real del formulario de contacto mediante JavaScript.
-* Accordion de Bootstrap para las preguntas frecuentes.
-* Página de carrito utilizando una tabla responsiva.
-* Enlaces entre las diferentes páginas del sitio.
-* Diseño adaptable para celulares, tabletas y computadoras.
+- CSS y Sass
+  Utilizados para personalizar colores, fondos, tipografías,
+  tarjetas, botones, formularios y otros elementos visuales.
 
-## Buenas prácticas
+- Bootstrap 5
+  Utilizado para el sistema de navegación, diseño responsivo,
+  grid, carrusel, botones, formularios, tablas, accordion,
+  modal y otros componentes.
 
-Durante el desarrollo del proyecto se aplicaron diferentes buenas prácticas:
+- JavaScript
+  Utilizado para crear las diferentes funciones interactivas
+  del sitio.
 
-* Uso de elementos semánticos de HTML5 como header, nav, main, section, article, aside y footer.
-* Organización del código mediante comentarios.
-* Separación de HTML, estilos y JavaScript.
-* Uso de nombres descriptivos para archivos, clases y elementos.
-* Reutilización de estilos y funciones de JavaScript.
-* Uso de atributos alt en las imágenes.
-* Uso de meta viewport para garantizar un diseño responsivo.
-* Uso de Git para el control de versiones.
-* Exclusión de archivos generados y dependencias mediante .gitignore.
+- LocalStorage
+  Utilizado para almacenar temporalmente los productos
+  seleccionados en el carrito de compras.
 
-## Diseño responsivo
+- Vite
+  Utilizado como herramienta de desarrollo y compilación
+  del proyecto.
 
-El sitio utiliza Bootstrap Grid y media queries para adaptarse a 
-diferentes tamaños de pantalla. Además, se personalizó la identidad 
-visual mediante un fondo degradado, una paleta de colores propia y 
-las tipografías Julius Sans One y Montserrat.
+- Google Fonts
+  Utilizado para integrar las tipografías Julius Sans One
+  y Montserrat.
 
-## Repositorio de GitHub
+- Git y GitHub
+  Utilizados para el control de versiones y almacenamiento
+  del proyecto.
+
+- GitHub Pages
+  Utilizado para publicar el sitio web en Internet.
+
+
+============================================================
+ESTRUCTURA DEL SITIO
+============================================================
+
+El proyecto contiene las siguientes páginas:
+
+1. index.html
+   Página principal de Beauty Store.
+
+2. productos.html
+   Catálogo general de productos.
+
+3. categorias.html
+   Presenta las diferentes categorías de productos.
+
+4. ofertas.html
+   Presenta productos disponibles a precios especiales.
+
+5. novedades.html
+   Presenta productos nuevos o destacados.
+
+6. favoritos.html
+   Presenta una selección de productos favoritos.
+
+7. carrito.html
+   Carrito de compras dinámico.
+
+8. pago.html
+   Página de checkout y proceso de pago simulado.
+
+9. nosotros.html
+   Información sobre Beauty Store, su historia, misión,
+   visión y valores.
+
+10. contacto.html
+    Formulario de contacto con validación.
+
+11. preguntas.html
+    Sección de preguntas frecuentes.
+
+12. politicas.html
+    Información sobre compras, envíos, devoluciones,
+    privacidad y términos generales.
+
+
+============================================================
+FUNCIONALIDADES PRINCIPALES
+============================================================
+
+- Barra de navegación responsiva utilizando Bootstrap.
+
+- Carrusel interactivo en la página principal.
+
+- Diseño adaptable a computadoras, tablets y dispositivos
+  móviles.
+
+- Tarjetas de productos con efectos hover.
+
+- Modal interactivo para visualizar información adicional
+  de los productos.
+
+- Botones para añadir productos al carrito desde diferentes
+  secciones del sitio.
+
+- Carrito de compras dinámico utilizando JavaScript y
+  LocalStorage.
+
+- Contador de artículos en la opción Carrito del menú de
+  navegación.
+
+- Los productos añadidos al carrito permanecen disponibles
+  aunque el usuario cambie de página.
+
+- Opción para aumentar o disminuir la cantidad de productos.
+
+- Opción para eliminar productos individualmente.
+
+- Opción para vaciar completamente el carrito.
+
+- Cálculo automático del subtotal y total del pedido.
+
+- Página de checkout para finalizar la compra.
+
+- Formulario de información de envío y pago.
+
+- Opciones demostrativas de pago mediante tarjeta,
+  PayPal y ATH Móvil.
+
+- Validación de los campos del checkout.
+
+- Mensaje de confirmación al completar una compra.
+
+- Formulario de contacto con validación en tiempo real.
+
+- Accordion de Bootstrap para las preguntas frecuentes.
+
+- Tabla responsiva para visualizar los productos del carrito.
+
+- Navegación entre todas las páginas del sitio.
+
+- Footer con enlaces a preguntas frecuentes y políticas.
+
+
+============================================================
+CARRITO DE COMPRAS
+============================================================
+
+El carrito de compras fue desarrollado utilizando JavaScript
+y LocalStorage.
+
+Cuando el usuario selecciona "Añadir al carrito", la
+información del producto queda almacenada temporalmente
+en el navegador.
+
+El carrito permite:
+
+- Visualizar los productos seleccionados.
+- Aumentar cantidades.
+- Disminuir cantidades.
+- Eliminar productos.
+- Vaciar el carrito.
+- Calcular automáticamente el subtotal.
+- Calcular automáticamente el total.
+- Visualizar la cantidad total de artículos en el menú
+  de navegación.
+- Continuar al proceso de checkout.
+
+
+============================================================
+CHECKOUT Y PAGO
+============================================================
+
+El proyecto incluye una página de checkout que permite
+demostrar el proceso de finalización de una compra.
+
+El usuario puede introducir información de contacto,
+dirección y seleccionar un método de pago.
+
+Los métodos incluidos son:
+
+- Tarjeta de crédito o débito.
+- PayPal.
+- ATH Móvil.
+
+IMPORTANTE:
+
+El sistema de pago es únicamente una simulación académica.
+
+El sitio no procesa transacciones reales, no está conectado
+a instituciones financieras y no almacena información
+bancaria real.
+
+Al completar correctamente el formulario, el sitio muestra
+un mensaje de confirmación y vacía el carrito de compras.
+
+
+============================================================
+DISEÑO
+============================================================
+
+Beauty Store utiliza una identidad visual personalizada
+relacionada con productos de belleza y cuidado personal.
+
+El diseño incluye:
+
+- Fondo gráfico en tonos rosados y durazno.
+- Paleta de colores personalizada.
+- Tarjetas con bordes redondeados y sombras.
+- Efectos hover.
+- Botones personalizados.
+- Tipografía Julius Sans One para títulos.
+- Tipografía Montserrat para textos y descripciones.
+- Secciones con fondos semitransparentes.
+- Diseño limpio y organizado.
+
+
+============================================================
+DISEÑO RESPONSIVO
+============================================================
+
+El sitio utiliza Bootstrap Grid y media queries para
+adaptarse a diferentes tamaños de pantalla.
+
+Los elementos del sitio cambian su distribución según
+el tamaño del dispositivo.
+
+Entre los elementos responsivos se encuentran:
+
+- Barra de navegación.
+- Carrusel.
+- Tarjetas de productos.
+- Formularios.
+- Tabla del carrito.
+- Checkout.
+- Secciones de contenido.
+- Footer.
+
+
+============================================================
+BUENAS PRÁCTICAS
+============================================================
+
+Durante el desarrollo del proyecto se implementaron
+diferentes buenas prácticas:
+
+- Uso de estructura semántica HTML5.
+- Uso de etiquetas como header, nav, main, section,
+  article, aside y footer.
+- Uso de comentarios para organizar el código.
+- Separación de HTML, estilos y JavaScript.
+- Nombres descriptivos para clases, identificadores
+  y variables.
+- Reutilización de estilos y funciones.
+- Uso de atributos alt en las imágenes.
+- Uso de meta viewport para diseño responsivo.
+- Validación de formularios.
+- Uso de Git para control de versiones.
+- Uso de .gitignore para excluir archivos que no deben
+  almacenarse en el repositorio.
+- Compilación del proyecto mediante Vite.
+
+
+============================================================
+ESTRUCTURA PRINCIPAL DEL PROYECTO
+============================================================
+
+beauty-store-vite/
+
+    src/
+
+        css/
+            styles.scss
+
+        images/
+            imágenes y recursos gráficos
+
+        js/
+            main.js
+
+        index.html
+        productos.html
+        categorias.html
+        ofertas.html
+        novedades.html
+        favoritos.html
+        carrito.html
+        pago.html
+        nosotros.html
+        contacto.html
+        preguntas.html
+        politicas.html
+
+    .github/
+        workflows/
+            deploy.yml
+
+    .gitignore
+    package.json
+    package-lock.json
+    vite.config.mjs
+    READE.txt
+
+
+============================================================
+GITHUB
+============================================================
+
+Repositorio del proyecto:
 
 https://github.com/marieangonzalez/beauty-store-vite
 
-## Sitio publicado con GitHub Pages
+
+Sitio publicado mediante GitHub Pages:
 
 https://marieangonzalez.github.io/beauty-store-vite/
 
-## Nota académica
 
-Este sitio fue desarrollado como parte de una evaluación académica para demostrar conocimientos de estructura HTML5, diseño CSS, Bootstrap, interacción con JavaScript, diseño responsivo, organización del código y buenas prácticas de desarrollo web.
+============================================================
+NOTA ACADÉMICA
+============================================================
+
+Este proyecto fue desarrollado con fines educativos como
+parte de una evaluación académica de desarrollo web.
+
+Beauty Store es una tienda ficticia y las funciones de
+compra y pago presentadas en el sitio son demostrativas.
+
+No se procesan pagos ni transacciones financieras reales.
+
+
+============================================================
+                         FIN
+============================================================
